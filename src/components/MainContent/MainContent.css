@@ -1,0 +1,40 @@
+.main-content{
+    background:#f7f7f7 ;
+    text-align: left;
+    border-radius: 10%;
+    border: whitesmoke;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    padding:0;
+    margin-left: 200px;
+    width: 30%;
+}
+
+.text h2{
+    font-family: 'Merriweather',Georgia,"Times New Roman",serif;
+    font-size: 36px;
+    line-height: 1.6em;
+    color: #000000;
+}
+
+.text p {
+    color: #666;
+    line-height: 2em;
+    padding-bottom: 1em;
+}
+
+.image{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+image img{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    vertical-align: baseline;
+}
