@@ -25,7 +25,7 @@ class Infobar extends Component {
                         <ul>
                             <li><a href="/">O Nama</a></li>
                             <li><a href="/">Treninzi</a></li>
-                            <li><a href="/">Plan Ishrane</a></li>
+                            <li><a href="/">Plan Ishrane<small> blog</small></a></li>
                             <li><a href="/">Galerija</a></li>
                             <li><a href="/">Cenovnik</a></li>
                         </ul>
