@@ -5,6 +5,7 @@ import MainContent from './components/MainContent/MainContent';
 import TrainingType from './components/TrainingTypes/TrainingType';
 import types from './components/TrainingTypes/types';
 import QuestionsHeader from './components/Asked Questions/QuestionsHeader';
+import Footer from './components/Footer/Footer'
 
 
 
@@ -13,7 +14,6 @@ class App extends Component {
     super()
     this.state = {
       trainingTypes: types
-      // questions:questionsL
     }
   }
   render() {
@@ -21,6 +21,7 @@ class App extends Component {
 
     return (
       <div className="App">
+
         <div>
           <Infobar />
         </div>
@@ -42,6 +43,11 @@ class App extends Component {
         <div className="questions-div">
           <QuestionsHeader />
         </div>
+
+        <div className="footer">
+          <Footer />
+        </div>
+
       </div>
     );
   }

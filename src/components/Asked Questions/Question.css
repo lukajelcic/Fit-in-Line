@@ -18,6 +18,27 @@ img{
     height: auto;
 }
 
+.inner-text h2{
+    font-family:'Noto Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+.inner-text h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.inner-text h3{
+    font-family: 'Montserrat',sans-serif;
+    color:#ffc47c!important;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.8em;
+}
+
 .questions{
     width: 100%;
     margin-top: 100px;
@@ -57,12 +78,15 @@ img{
 
 .toggle-card p{
     font-family: 'Montserrat',sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
+    letter-spacing: 0.5px;
     color:#000!important;
 }
 
 .toggle-conent{
     position: relative;
-    padding-top: 10px;
+    padding-top: 8px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
