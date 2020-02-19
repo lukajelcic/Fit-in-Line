@@ -1,54 +1,43 @@
 import React, { Component } from 'react';
 import Infobar from './components/Infobar/Infobar';
-import HeadContent from './components/HeadContent/HeadContent';
-import MainContent from './components/MainContent/MainContent';
-import TrainingType from './components/TrainingTypes/TrainingType';
-import types from './components/TrainingTypes/types';
-import QuestionsHeader from './components/Asked Questions/QuestionsHeader';
 import Footer from './components/Footer/Footer'
+import HomePage from './components/HomePage';
+import { Router, Switch, Route } from 'react-router';
+import history from './components/history';
+import TrainingsPage from './components/TrainingsPage/TrainingsPage';
+import './components/TrainingTypes/TrainingType.css'
 
 
 
 class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      trainingTypes: types
-    }
-  }
   render() {
-    const typeItems = this.state.trainingTypes.map(item => <TrainingType key={item.id} item={item} />)
-
     return (
+      <Router history={history}>
       <div className="App">
 
-        <div>
+        {/*NAVBAR*/}
+        <div className="info-bar">
           <Infobar />
         </div>
 
-        <div>
-          <HeadContent />
-        </div>
 
-        <div>
-          <MainContent />
-        </div>
+          <Switch>
+            <Route path="/training">
+              <TrainingsPage />
+            </Route>
+            <Route path="/">
+              <HomePage />
+            </Route>
+          </Switch>
 
-        <div className="center-div">
-          <div className="card-content">
-            {typeItems}
-          </div>
-        </div>
 
-        <div className="questions-div">
-          <QuestionsHeader />
-        </div>
-
+        {/*FOOTER */}
         <div className="footer">
           <Footer />
         </div>
 
       </div>
+      </Router>
     );
   }
 }

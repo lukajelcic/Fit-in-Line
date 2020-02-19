@@ -6,10 +6,10 @@ import './Slider.css'
 class Slider extends Component {
     render(){
         const images = [
-            {url:"https://images.unsplash.com/photo-1542766788-a2f588f447ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80"},
-            {url:"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"},
-            {url:"https://images.unsplash.com/photo-1527933053326-89d1746b76b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"},
-            {url:"https://images.unsplash.com/photo-1518310383802-640c2de311b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"},
+            {url:"https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/374783_103248286458628_1654765810_n.jpg?_nc_cat=104&_nc_ohc=1FPdoUrHxa4AX-wmfX3&_nc_ht=scontent-sof1-1.xx&oh=935aec1e9f56a67988ea5c91ab2df524&oe=5EBBA2C1"},
+            {url:"https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/375227_103248809791909_2012931097_n.jpg?_nc_cat=104&_nc_ohc=xD5snJ04zlIAX9OX_VS&_nc_ht=scontent-sof1-1.xx&oh=1a6872121e6503979eb19d99d45fe241&oe=5F01805A"},
+            {url:"https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/373884_103248573125266_1985205443_n.jpg?_nc_cat=100&_nc_ohc=lWvcVoKVTpAAX9aefPU&_nc_ht=scontent-sof1-1.xx&oh=f68159deb4409ed5ab16e7e4e9848031&oe=5EC27201"},
+            {url:"https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/383590_103248349791955_53509021_n.jpg?_nc_cat=108&_nc_ohc=L7hVeOx9EQMAX_bYIhb&_nc_ht=scontent-sof1-1.xx&oh=8549ac3c8a822857515549a0b7f88ec3&oe=5EC20CCD"},
         ];
 
         return(

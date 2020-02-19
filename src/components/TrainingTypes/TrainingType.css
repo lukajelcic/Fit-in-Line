@@ -1,26 +1,82 @@
-.center-div{
-    justify-content: center;
-    display: flex;
-    background-image:linear-gradient(180deg,rgb(241, 245, 249,0.6) 100%,#ffffff 0%), url("https://images.unsplash.com/photo-1509833903111-9cb142f644e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1855&q=80");
-    background-repeat: no-repeat;
+.trainings-page{
+    /* background-image:linear-gradient(180deg,rgb(241, 245, 249,0.6) 100%,#ffffff 0%), url("https://images.unsplash.com/photo-1509833903111-9cb142f644e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1855&q=80"); */
     background-position: center;
-    background-size: cover;
-    transform: skewY(-1deg);
-  }
-  
-  .card-content{
-    margin-top: 100px;
-    display: flex;
-    vertical-align: baseline;
-    width: 80%;
-  }
-
-.training-types{
-    width: 25%;
-    padding: 0 2rem;
-    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    justify-content: center;
+    width: 100%;
 }
 
+.training-page-wrap{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header{
+    position: relative;
+    width: 30%;
+    margin-top: 80px;
+    margin-left: 9em;
+    float: left;
+    transform: skewX(1deg);
+}
+
+.header h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 34px;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+    color: rgb(9, 83, 88);
+}
+
+.header h2{
+    color: #333737 !important;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px !important;
+    font-weight: bold;
+    margin-bottom: 22px;
+    line-height: 1.4em !important;
+}
+
+.header p{
+    color: #333737;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    margin-bottom: 30px;
+    display: inline-block;
+    line-height: 1.4em;
+}
+
+.header-image{
+    display: flex;
+    width: 45%;
+    margin-top:120px;
+    padding-left: 8.5em;
+}
+
+img{
+    border-radius: 10px;
+    transform: skewX(1deg);
+}
+
+.training-page-cards{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-column-gap:100px;
+    margin: auto;
+}
+  
+.training-types{
+    width: 400px;
+    margin-top: 55px;
+}
+
+.paragraph{
+    height: auto;
+}
 .content{
     font-size: 16px;
     line-height: 2em;
@@ -38,7 +94,8 @@
 .content h4{
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.8em;
-    font-size: 16px;
+    color:#cf7303!important;
+    font-size: 17px;
 }
 
 .content p{
@@ -50,4 +107,5 @@
     padding-bottom: 1em;
     font-size: 15px;
 }
+
 

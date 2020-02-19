@@ -1,4 +1,6 @@
 .footer-heading{
+    padding: 0;
+    margin: 0;
     padding-top: 30px!important;
     padding-bottom: 30px!important;
     position: relative;
@@ -9,8 +11,57 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 1.6em;
+    color: black;
 }
 
 .footer-heading p{
     line-height: 2em;
+    padding-bottom: 0;
+    vertical-align: baseline;
+    color: #666;
+    font-weight: 500;
 }
+
+.footer-content{
+    display: flex;
+    padding-top: 25px;
+}
+
+.footer-content img{
+    width: 36px;
+    height: 36px;
+    text-align: center;
+}
+
+.email{
+    text-align: center;
+    margin-right: 20px;
+}
+
+.footer-content h5{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer-content p{
+    font-family: 'Noto Sans', sans-serif;
+    text-transform:lowercase;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.phone{
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.address{
+    text-align: center;
+    margin-left: 20px;
+}
+
+
+

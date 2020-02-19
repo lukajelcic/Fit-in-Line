@@ -1,9 +1,7 @@
 .infobar{
     width: 100%;
-    position: static;
     background: rgb(9, 83, 88);
     height: 45px;
-    overflow: hidden;
     top: 0;
     left: 0;
     right: 0;
@@ -30,6 +28,13 @@
     width: 65%;
 }
 
+.infobar-top-items img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
 .infobar-top-items ul{
     list-style: none;
     margin: 0;
@@ -53,7 +58,6 @@
     position: absolute;
     text-align: center;
     margin-top: 45px;
-    height: 60px;
     left: 0;
     top: 0;
     background: rgb(241, 245, 249);
