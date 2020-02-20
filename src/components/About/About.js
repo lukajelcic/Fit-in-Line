@@ -9,7 +9,7 @@ function About() {
                 <div className="text-and-image">
                     <h1>Fitnes i Ishrana</h1>
                     <div className="about-text">
-                        <h3>Fitness i teretana Fit in Line se nalazai na lokaciji Janka Veselinovica</h3>
+                        <h3>Fitness i teretana Fit in Line se nalazi na lokaciji Janka Veselinovica</h3>
 
                         <section className="about-paragrph">
                             <p>Ethnogym je specijalista u Beogradu za grupne fitnes programe sa više od 200 fitnes časova mesečno i 15 različitih vrsta programa. Od Les Mills programa do yoge, pilatesa, zumbe, cardio boxa…</p>

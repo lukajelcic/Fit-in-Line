@@ -25,19 +25,19 @@
 }
 
 .text-and-image{
-    width: 50%;
+    width: 40%;
     margin: 0;
     padding: 0;
     justify-content: center;
     display: block;
+    margin-left: 40px;
 }
 
 .text-and-image h1{
-    font-size: 42px;
-    font-weight: bold;
-    margin-top: 120px;
+    font-size: 34px;
+    line-height: 1.6em;
+    margin-top: 110px;
     margin-left: 40px;
-    line-height: 1.1em;
     color: rgb(9, 83, 88);
     letter-spacing: 1px;
     font-family: 'Noto Sans', sans-serif;
@@ -50,15 +50,18 @@
 }
 
 .about-text h3{
-    font-size: 1.7em;
-    line-height: 1.4em;
+    color: #cf7303!important;
     font-family: "Montserrat", sans-serif;
+    font-size: 24px !important;
     font-weight: 400;
-    color:#cf7303!important;
+    margin-bottom: 22px;
+    line-height: 1.4em !important;
 }
 
+
 article p{
-    line-height: 1.9em;
+    line-height: 1.4em;
+    font-size: 16px;
 }
 
 .about-text p{

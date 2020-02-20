@@ -18,6 +18,7 @@ class TrainingsPage extends Component {
         return (
             <div className="trainings-page">
                 <TrainingHeader />
+                
                 <div className="training-page-wrap">
                     <div className="training-page-cards">
                         {typeItems}

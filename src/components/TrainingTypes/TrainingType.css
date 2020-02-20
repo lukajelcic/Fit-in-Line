@@ -28,15 +28,15 @@
     line-height: 1.6em;
     text-transform: uppercase;
     color: #000000;
-    font-weight: 500;
+    font-weight: 700;
     color: rgb(9, 83, 88);
 }
 
 .header h2{
-    color: #333737 !important;
-    font-family: 'Noto Sans', sans-serif;
+    color:#cf7303!important;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px !important;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 22px;
     line-height: 1.4em !important;
 }
@@ -44,7 +44,7 @@
 .header p{
     color: #333737;
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 30px;
     display: inline-block;
     line-height: 1.4em;
@@ -69,12 +69,18 @@ img{
     margin: auto;
 }
 
-@media only screen and (max-width:1300px){
+@media only screen and (min-width:1320px){
     .training-page-cards{
         display: grid;
         grid-template-columns: 350px 350px 350px;
         grid-column-gap:60px;
         margin: auto;
+    }
+}
+
+@media only screen and(-width:1320px){
+    .content{
+        box-shadow: 10px 20px 60px 10px rgba(8, 34, 61, 0.2); 
     }
 }
 
@@ -89,7 +95,7 @@ img{
   
 .training-types{
     width: 400px;
-    margin-top: 55px;
+    margin-top: 50px;
 }
 
 @media only screen and(max-width:1300px){
@@ -120,7 +126,7 @@ img{
     padding-bottom: 30px;
     padding-left: 30px;
     margin-bottom: 10px;
-    box-shadow: 0px 10px 60px 0px rgba(8, 34, 61, 0.1);
+    box-shadow: 15px 5px 15px 5px rgba(148, 148, 148, 0.2);
 }
 
 .content h4{

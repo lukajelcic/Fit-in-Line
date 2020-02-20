@@ -7,6 +7,8 @@ import history from './components/history';
 import TrainingsPage from './components/TrainingsPage/TrainingsPage';
 import './components/TrainingTypes/TrainingType.css'
 import About from './components/About/About';
+import Reserve from './components/Reserve/Reserve';
+import News from './components/News/News'
 
 
 
@@ -23,6 +25,9 @@ class App extends Component {
 
 
           <Switch>
+            <Route path="/news">
+              <News />
+            </Route>
             <Route path="/training">
               <TrainingsPage />
             </Route>
@@ -34,7 +39,7 @@ class App extends Component {
             </Route>
           </Switch>
 
-
+          <Reserve />
           {/*FOOTER */}
           <div className="footer">
             <Footer />
