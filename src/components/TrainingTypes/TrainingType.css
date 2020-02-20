@@ -68,11 +68,43 @@ img{
     grid-column-gap:100px;
     margin: auto;
 }
+
+@media only screen and (max-width:1300px){
+    .training-page-cards{
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        grid-column-gap:60px;
+        margin: auto;
+    }
+}
+
+/* @media only screen and (min-width:1300px){
+    .training-page-cards{
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        grid-column-gap:60px;
+        margin: auto;
+    }
+} */
   
 .training-types{
     width: 400px;
     margin-top: 55px;
 }
+
+@media only screen and(max-width:1300px){
+    .trainings-types{
+        width:350px;
+        margin-top: 55px;
+    }
+}
+
+/* @media only screen and(min-width:1300px){
+    .trainings-types{
+        width:350px;
+        margin-top: 55px;
+    }
+} */
 
 .paragraph{
     height: auto;
@@ -96,6 +128,8 @@ img{
     line-height: 1.8em;
     color:#cf7303!important;
     font-size: 17px;
+    /* transition: color 0.3s ease, red 0.3s ease;
+    cursor: pointer; */
 }
 
 .content p{

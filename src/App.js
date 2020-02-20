@@ -6,6 +6,7 @@ import { Router, Switch, Route } from 'react-router';
 import history from './components/history';
 import TrainingsPage from './components/TrainingsPage/TrainingsPage';
 import './components/TrainingTypes/TrainingType.css'
+import About from './components/About/About';
 
 
 
@@ -13,17 +14,20 @@ class App extends Component {
   render() {
     return (
       <Router history={history}>
-      <div className="App">
+        <div className="App">
 
-        {/*NAVBAR*/}
-        <div className="info-bar">
-          <Infobar />
-        </div>
+          {/*NAVBAR*/}
+          <div className="info-bar">
+            <Infobar />
+          </div>
 
 
           <Switch>
             <Route path="/training">
               <TrainingsPage />
+            </Route>
+            <Route path="/about">
+              <About />
             </Route>
             <Route path="/">
               <HomePage />
@@ -31,12 +35,12 @@ class App extends Component {
           </Switch>
 
 
-        {/*FOOTER */}
-        <div className="footer">
-          <Footer />
-        </div>
+          {/*FOOTER */}
+          <div className="footer">
+            <Footer />
+          </div>
 
-      </div>
+        </div>
       </Router>
     );
   }
