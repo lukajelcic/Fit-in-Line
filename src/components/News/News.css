@@ -85,3 +85,83 @@ figure{
 img{
     max-width: 100%;
 }
+
+.main-news{
+    padding: 50px 0;
+    margin: 30px 30px 30px 30px;
+    justify-content: center;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.card{
+    width: 31.33333%;
+    float: left;
+    margin: 0 1%;
+    margin-bottom: 30px !important;
+    position: relative;
+}
+
+.entry-title{
+    transform: skewX(-6deg);
+    text-align: justify;
+
+}
+
+.entry-title a{
+    margin-top: 10px;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.9em;
+    text-transform: uppercase;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.entry-title a:hover{
+    border-left: 8px solid orange;
+}
+
+.entry-meta{
+    margin: 0;
+}
+
+.entry-meta .views{
+    margin: 0 10px 0 0;
+}
+
+.entry-meta .fa{
+    margin: 0;
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.entry-content{
+    margin: 10px 0 10px;
+    width: 75%;
+}
+
+.entry-content p{
+    color: #333737;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2em;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#view-fa{
+    color: black;
+    display: inline;
+}
+
+#date-fa{
+    color: black;
+    display: inline;
+}

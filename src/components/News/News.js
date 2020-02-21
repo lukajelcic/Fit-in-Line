@@ -38,7 +38,7 @@ class News extends Component {
                         </aside>
                     </div>
                 </article>
-                <div>
+                <div className="main-news">
                     {newsItems}
                 </div>
             </main>

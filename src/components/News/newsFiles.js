@@ -16,7 +16,7 @@ const news =[
     {
         id:"3",
         title:"Specijalna rodjendanska ponuda",
-        content:"Povodom 13. rođendana Ethnogym-a 4, 5. i 6. juna smo za vas pripremili sjajne pogodnosti  . Svi ljubitelji zdravog života,…",
+        content:"Povodom 13. rođendana Ethnogym-a 4, 5. i 6. juna smo za vas pripremili sjajne pogodnosti  . Svi ljubitelji zdravog života…",
         views:"25,222",
         date:"2.January 2020."
     },
@@ -26,7 +26,21 @@ const news =[
         content:"Dragi članovi, Po proverenoj recepturi sa Novog Zelanda, 09. jula u Ethnogym na Banjici stižu sjajna, nova les Mills izdanja…",
         views:"8,005",
         date:"7 June 2019"
-    }
+    },
+    {
+        id:"5",
+        title:"Specijalna rodjendanska ponuda",
+        content:"Povodom 13. rođendana Ethnogym-a 4, 5. i 6. juna smo za vas pripremili sjajne pogodnosti  . Svi ljubitelji zdravog života…",
+        views:"25,222",
+        date:"2.January 2020."
+    },
+    {
+        id:"6",
+        title:"Novi blog o ishrani",
+        content:"Dragi članovi, Po proverenoj recepturi sa Novog Zelanda, 09. jula u Ethnogym na Banjici stižu sjajna, nova les Mills izdanja…",
+        views:"8,005",
+        date:"7 June 2019"
+    },
 ]
 
 export default news;
