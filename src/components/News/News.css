@@ -1,4 +1,4 @@
-.training-page{
+.news-page{
     border: 0 none;
     padding: 0;
     margin-top: 50px;
@@ -6,7 +6,7 @@
     display: inline-block;
 }
 
-.training-article{
+.news-article{
     margin: 30px 30px 30px 30px !important;
     display: flex;
     justify-content: center;
@@ -76,10 +76,6 @@ figure{
     display: block;
 }
 
-#trn{
-    margin-top: 120px;
-}
-
 .page-head img{
     height: auto;
     width: 100%;
@@ -88,16 +84,15 @@ figure{
 
 img{
     max-width: 100%;
-    object-fit: cover;
 }
 
-.training-wrapper{
+.news-wrapper{
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.main-training{
+.main-news{
     padding: 100px 0;
     display: grid;
     grid-template-columns: 300px 300px 300px;
@@ -105,13 +100,10 @@ img{
     margin: auto;
 }
 
+
 .card{
     margin-bottom: 50px !important;
     position: relative;
-}
-
-.training-img{
-    cursor: pointer;
 }
 
 .entry-title{
