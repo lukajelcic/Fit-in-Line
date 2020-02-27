@@ -1,14 +1,17 @@
 import React from 'react';
 
+// import tack from '../../images/tack.png'
 
 function NewsCard(props) {
     return (
         <section className="news-card-section">
             <article className="news-card">
 
+                <hr style={{ width: '32px',left:'-10px',top:'-5px' }}></hr>
+                <hr style={{ width: '45px',left:'-10px',top:'0px'}}></hr>
+                {/* <img src={tack} alt="/"></img> */}
+
                 <div className="news-img">
-                {/* <hr style={{ width: '10%' }}></hr>
-                <hr style={{ width: '10%' }}></hr> */}
                     <a href="/">
                         <img style={{ width: 300, height: 200 }} src={props.item.url} alt="/"></img>
                     </a>

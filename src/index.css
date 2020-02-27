@@ -1,3 +1,7 @@
+html{  
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   left: 0;
@@ -22,11 +26,80 @@ body {
   background-repeat: no-repeat;
   background-image: url(http://fmfitnessnutrition.com/wp-content/uploads/2018/12/nutritionist-15.png),radial-gradient(circle at center,#f9f9f4 80%,#ffffff 100%)!important;
   height: 500px;
-  padding-top: 2px;
-  padding-right: 16%;
-  padding-bottom: 0px;
-  padding-left: 16%;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  width: 100%;
   background-color: #f9f9f4!important;
+}
+
+:root{
+  --header-green:rgb(9, 83, 88);
+  --title1-green:rgb(17, 143, 12);
+  --title2-orange:#cf7303;
+  --paragraph-gray:rgb(90, 90, 90);
+}
+
+.page-head{
+  margin-top: 70px;
+  display: inline-block;
+  width:78%;
+  position: relative;
+}
+
+.page-head header{
+  width: 35%;
+  float: left;
+  display: block;
+}
+
+.page-head h1{
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: uppercase;
+  color: rgb(9, 83, 88);
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.page-head h2{
+  color:#cf7303!important;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 22px !important;
+  font-weight: 400;
+  margin-bottom: 22px;
+  line-height: 1.2em !important;
+}
+
+.page-head p{
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-bottom: 40px;
+  display: inline-block;
+  line-height: 1.7em;
+  text-align: justify;
+}
+
+.page-head aside{
+  width: 50%;
+  padding-left: 20px;
+  float:right;
+  height: 420px;
+  overflow: hidden;
+}
+
+.page-head figure{
+  width: 100%;
+  z-index: -1;
+  max-width: 100%;
+  height: 100%;
+}
+
+figure{
+  display: block;
+}
+
+.page-head img{
+  height: auto;
+  width: 100%;
+  position: relative;
 }

@@ -26,9 +26,9 @@ class Infobar extends Component {
                     <div className="menubar">
                         <ul>
                             <li><Link to="/about">O Nama</Link></li>
+                            <li><Link to="/news">Vesti</Link></li>
                             <li><a href="/">Ishrana</a></li>
                             <li><Link to="/training">Treninzi</Link></li>
-                            <li><Link to="/news">Vesti</Link></li>
                             <li><a href="/">Gelerija</a></li>
                         </ul>
                     </div>

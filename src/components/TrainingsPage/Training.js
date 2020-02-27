@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import TrainingType from '../TrainingTypes/TrainingType';
 
 import types from '../TrainingTypes/types';
+// import TrainingBtn from '../Buttons/TrainingBtn';
 
 import '../TrainingTypes/TrainingType.css';
 

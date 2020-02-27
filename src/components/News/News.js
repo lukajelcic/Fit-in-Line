@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import news from './newsFiles';
-
 import './News.css'
 
 import NewsCard from './NewsCard';
@@ -17,6 +16,7 @@ class News extends Component {
         const newsItems = this.state.newsCards.map(item => <NewsCard key={item.id} item={item} />)
         return (
             <main className="news-page">
+                <div className="background"></div>
                 <article className="news-article">
                     <div className="page-head">
                         <header className="header-text">
@@ -32,13 +32,14 @@ class News extends Component {
 
                         <aside className="news-image">
                             <figure>
-                                <a href="/" className="link-img">
+                                {/* <a href="/" className="link-img">
                                     <img src="https://www.nuffieldhealth.com/_image/thumbnail/500x300%5E/?url=https://www.nuffieldhealth.com/local/36/f0/026fc8aa4081b4d73528d9c7a812/capture.PNG" alt="/"></img>
-                                </a>
+                                </a> */}
                             </figure>
                         </aside>
                     </div>
                 </article>
+
 
                 <div className="news-wrapper">
                     <div className="main-news">
@@ -46,6 +47,7 @@ class News extends Component {
                     </div>
                 </div>
             </main>
+
         )
     }
 }

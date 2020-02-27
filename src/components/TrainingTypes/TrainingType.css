@@ -1,7 +1,6 @@
 .training-page{
     border: 0 none;
     padding: 0;
-    margin-top: 50px;
     width: 100%;
     display: inline-block;
 }
@@ -19,69 +18,6 @@
     justify-content: center;
 }
 
-.header-text{
-    margin-top: 20px;
-}
-
-.page-head{
-    display: inline-block;
-    width:90%;
-    position: relative;
-}
-
-.page-head header{
-    width: 33%;
-    float: left;
-    display: block;
-}
-
-.page-head h1{
-    font-family: 'Noto Sans', sans-serif;
-    text-transform: uppercase;
-    color: rgb(9, 83, 88);
-    font-size: 38px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    margin-top: 30px;
-}
-
-.page-head h2{
-    color:#cf7303!important;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 22px !important;
-    font-weight: 400;
-    margin-bottom: 22px;
-    line-height: 1.2em !important;
-}
-
-.page-head p{
-    color: #333737;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    margin-bottom: 40px;
-    display: inline-block;
-    line-height: 1.7em;
-    text-align: justify;
-}
-
-.page-head aside{
-    width: 50%;
-    padding-left: 20px;
-    float:right;
-    height: 420px;
-    overflow: hidden;
-}
-
-.page-head figure{
-    width: 100%;
-    z-index: -1;
-    max-width: 100%;
-    height: 100%;
-}
-
-figure{
-    display: block;
-}
 
 #trn{
     margin-top: 120px;
@@ -99,7 +35,6 @@ img{
 }
 
 
-
 .main-training{
     padding: 100px 0;
     display: grid;
@@ -110,6 +45,7 @@ img{
 
 .training-card{
     margin-top: 25px;
+    margin-bottom: 50px !important;
     position: relative;
 }
 
@@ -120,64 +56,4 @@ img{
 .training-img a:hover img{
     transform: scale(1.2);
     transition: 1s;
-}
-
-.entry-title{
-    transform: skewX(-6deg);
-    text-align: justify;
-}
-
-.entry-title a{
-    margin-top: 10px;
-    color: black;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.9em;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-}
-
-.entry-title a:hover{
-    border-left: 8px solid orange;
-    transition: 0.7s;
-}
-
-.entry-meta{
-    margin: 0;
-}
-
-.entry-meta .views{
-    margin: 0 10px 0 0;
-}
-
-.entry-meta .fa{
-    margin: 0;
-    display: inline-block;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-.entry-content{
-    margin: 10px 0 10px;
-}
-
-.entry-content p{
-    color: #333737;
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.2em;
-    font-size: 16px;
-    text-align: justify;
-}
-
-#view-fa{
-    color: black;
-    display: inline;
-}
-
-#date-fa{
-    color: black;
-    display: inline;
 }
