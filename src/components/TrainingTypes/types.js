@@ -25,7 +25,7 @@ const types = [
     },
     {
         id:"5",
-        title:"INDIVIDUALNI PRISTUP",
+        title:"ZUMBA",
         url:"https://images.news18.com/ibnlive/uploads/2016/08/zumbajune30.jpg",
         text:"Sve što radimo podređeno je TVOJIM potrebama. Sertifikovani treneri ti svake nedelje mogu izraditi plan treninga, u skladu sa tvojim ciljem, slobodnim vremenom i dosadašnjim rezultatima, BEZ OBZIRA NA VRSTU ČLANSTVA.",  
     },

@@ -26,7 +26,7 @@ const news =[
     {
         id:"4",
         title:"Novi blog o ishrani",
-        url:"https://blogs.csun.edu/nutritionexperts/wp-content/uploads/sites/67/2019/07/MMC-blog-vegetable.jpg",
+        url:"https://images.pexels.com/photos/204686/pexels-photo-204686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         content:"Dragi članovi, Po proverenoj recepturi sa Novog Zelanda, 09. jula u Ethnogym na Banjici stižu sjajna, nova les Mills izdanja…",
         views:"8,005",
         date:"7 June 2019"

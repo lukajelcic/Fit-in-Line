@@ -3,8 +3,7 @@ import React from 'react';
 function TrainingType(props) {
     return (
         <section className="training-card-section">
-            <article className="card">
-
+            <article className="training-card">
                 <div className="training-img">
                     <a href="/">
                         <img style={{ width: 300, height: 200 }} src={props.item.url} alt="/"></img>

@@ -4,9 +4,11 @@ import React from 'react';
 function NewsCard(props) {
     return (
         <section className="news-card-section">
-            <article className="card">
+            <article className="news-card">
 
                 <div className="news-img">
+                {/* <hr style={{ width: '10%' }}></hr>
+                <hr style={{ width: '10%' }}></hr> */}
                     <a href="/">
                         <img style={{ width: 300, height: 200 }} src={props.item.url} alt="/"></img>
                     </a>

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
-import TrainingType from '../TrainingTypes/TrainingType'
+import TrainingType from '../TrainingTypes/TrainingType';
 
 import types from '../TrainingTypes/types';
-// import '../News/News.css'
 
-import '../TrainingTypes/TrainingType.css'
+import '../TrainingTypes/TrainingType.css';
 
 class Training extends Component {
     constructor(props) {
