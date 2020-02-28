@@ -1,23 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './buttons.css'
 
-function TrainingBtn() {
-    return (
-        <div style={{marginLeft:'10px'}}>
-        <div className="center-con">
-            <div className="round">
-                <a href="#rsv">
-                <span id="s1"></span>
-                <span id="s2"></span>
-                <span id="s3"></span>
-                <span id="s4"></span>
-                </a>
-            </div>
+class TrainingBtn extends Component {
+    constructor() {
+        super();
+        this.state = {
+            arrowClicked: false
+        }
+    }
 
-        </div>
-        </div>
-    )
+    changeArrow = () => {
+        this.setState({
+            arrowClicked: !this.state.arrowClicked
+        })
+    }
+
+    render() {
+        return (
+            <div style={{ marginLeft: '10px' }}>
+                <div className="center-con">
+                    <div className="round">
+                        <a href="#rsv" onClick={this.changeArrow}>
+                            <i className={this.state.arrowClicked ? "up" : "down"}></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default TrainingBtn;

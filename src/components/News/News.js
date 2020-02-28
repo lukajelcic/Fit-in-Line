@@ -32,9 +32,6 @@ class News extends Component {
 
                         <aside className="news-image">
                             <figure>
-                                {/* <a href="/" className="link-img">
-                                    <img src="https://www.nuffieldhealth.com/_image/thumbnail/500x300%5E/?url=https://www.nuffieldhealth.com/local/36/f0/026fc8aa4081b4d73528d9c7a812/capture.PNG" alt="/"></img>
-                                </a> */}
                             </figure>
                         </aside>
                     </div>

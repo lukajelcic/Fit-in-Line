@@ -46,6 +46,7 @@ img{
     background: #fff;
     display: flex;
     justify-content: center;
+    transition: all 1s;
 }
 
 .questions-left{
@@ -86,8 +87,15 @@ img{
 }
 
 .toggle-conent{
+    text-align: justify;
     position: relative;
     padding-top: 8px;
     margin-left: 25px;
     margin-right: 25px;
+}
+
+.hide-content{
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
 }

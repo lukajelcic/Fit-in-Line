@@ -6,21 +6,23 @@ class QuestionLeft extends Component {
     constructor() {
         super();
         this.state = {
-            opened: false
+            opened: false,
         }
     }
+
+    toggle = ()=>{
+        this.setState({
+            opened:!this.state.opened
+        })
+    }
+
     render() {
-        const { opened } = this.state;
         return (
-            <div className="toggle-card" onClick={() => this.setState({ opened: !opened })}>
+            <div className="toggle-card" onClick={this.toggle}>
                 <h5 className="toggle-title">{this.props.item.title}</h5>
-                {opened
-                    ?
-                    <div className="toggle-conent">
+                <div className=  {this.state.opened ? "toggle-conent" : "hide-content"}> 
                         <p>{this.props.item.text}</p>
                     </div>
-                    : null
-                }
 
             </div>
         )
