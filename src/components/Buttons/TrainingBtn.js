@@ -18,10 +18,10 @@ class TrainingBtn extends Component {
 
     render() {
         return (
-            <div style={{ marginLeft: '10px' }}>
+            <div style={{ marginLeft: '10px'}}>
                 <div className="center-con">
-                    <div className="round">
-                        <a href="#rsv" onClick={this.changeArrow}>
+                    <div className="round" onClick={this.changeArrow}>
+                        <a href={this.state.arrowClicked ? "#rsv" : "#"}>
                             <i className={this.state.arrowClicked ? "up" : "down"}></i>
                         </a>
                     </div>

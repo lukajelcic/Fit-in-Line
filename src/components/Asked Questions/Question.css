@@ -46,7 +46,6 @@ img{
     background: #fff;
     display: flex;
     justify-content: center;
-    transition: all 1s;
 }
 
 .questions-left{

@@ -3,23 +3,15 @@
     margin-top: 60px;
     width: 60px;
     height:60px;
-}
-
-.round span{
-    z-index: 999;
-    height: 3px;
-    margin:1px;
-    width: 17px;
-    background: var(--header-green);
-    transition: 0.5s ease;
+    visibility: visible;
 }
 
 .round i{
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 5px;
-    transition: all 0.1s ease;
+    padding: 10px;
+    transition: all 0.5s ease;
     cursor: pointer;
 }
 
@@ -30,51 +22,5 @@ a .down{
 a .up {
     transform: rotate(-135deg);
 }
+/*KRAJ SCORLA */
 
-#s1{
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 35%;
-}
-
-#s2 {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 35%;
-}
-
-#s3{
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 54%;
-}
-
-#s4{
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 54%;
-}
-
-.round:hover #s1 {
-    transform: rotate(-135deg);
-}
-
-.round:hover #s2 {
-    transform: rotate(135deg);
-}
-
-.round:hover #s3 {
-    transform: rotate(225deg);
-}
-
-.round:hover #s4 {
-    transform: rotate(-225deg);
-}
