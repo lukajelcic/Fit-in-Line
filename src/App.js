@@ -16,7 +16,6 @@ class App extends Component {
     return (
       <Router history={history}>
         <div className="App">
-
           {/*NAVBAR*/}
           <div className="info-bar">
             <Infobar />

@@ -40,12 +40,12 @@ body {
 .page-head{
   margin-top: 70px;
   display: inline-block;
-  width:78%;
+  width:90%;
   position: relative;
 }
 
 .page-head header{
-  width: 35%;
+  width: 45%;
   float: left;
   display: block;
 }
