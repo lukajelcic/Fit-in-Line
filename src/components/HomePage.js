@@ -1,15 +1,15 @@
 import React from 'react';
 
-import MainContent from './MainContent/MainContent';
 import HeadContent from './HeadContent/HeadContent';
 import QuestionHeader from './Asked Questions/QuestionsHeader'
+import QuickLinks from './QuickLinksSlider/QuickLinks'
 
 
 function HomePage() {
     return (
         <div className="main-page">
             <HeadContent />
-            <MainContent />
+            <QuickLinks />
             <QuestionHeader />
         </div>
     )
