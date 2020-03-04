@@ -1,5 +1,5 @@
 import React from 'react';
-
+import RegButton from '../Buttons/RegButton'
 import './newsletter.css'
 
 class Newsletter extends React.Component{
@@ -16,8 +16,9 @@ class Newsletter extends React.Component{
                     <div className="newsletter-form">
                         <form className="validate" action="" method="post">
                             <div id="signup-scroll">
-                                <div className="field-group">
+                                <div className="field-group" style={{display:'flex',marginLeft:'40px'}}>
                                     <input type="email" placeholder="E-mail" name="eMail" className="required-email"></input>
+                                    <RegButton name="Prijavi se"></RegButton>
                                 </div>
                             </div>
                         </form>

@@ -12,7 +12,6 @@ function HomePage() {
             <QuickLinks />
             <HeadContent />
             <Newsletter />
-            <hr></hr>
             <QuestionHeader />
         </div>
     )

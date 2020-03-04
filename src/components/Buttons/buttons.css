@@ -22,5 +22,38 @@ a .down{
 a .up {
     transform: rotate(-135deg);
 }
+
+a{
+    text-decoration: none;
+    transition : all 0.3s linear;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+a:hover{
+    transform : scale(1.02);
+}
+
+.reg-btn{
+    background: #61918a;
+    min-width: 160px;
+    width: auto;
+    color: #fff !important;
+    height: 46px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    outline: 0 none;
+    border: 0;
+    cursor: pointer;
+    border-right: 10px solid orange;
+    transform: skew(-15deg,0deg);   
+    float: right;
+    position: static; 
+}
 /*KRAJ SCORLA */
 

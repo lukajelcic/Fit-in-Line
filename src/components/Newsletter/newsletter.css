@@ -1,6 +1,7 @@
 .newsletter-section{
     padding: 30px 0;
-    background-color: #274c81;
+    background: rgb(9, 83, 88);
+    border-top: 2px solid orange;
 }
 
 .newsletter-wrap{
@@ -12,20 +13,28 @@
 }
 
 .newsletter-title{
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
     margin-bottom: 10px;
-    line-height: 1.5em;
+    margin-left:40px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-size: 1.2em;
+    padding-right: 180px;
+    display: block;
 }
 
 .newsletter-txt{
-    color: #50bfbf;
-    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color:#cf7303!important;
+    margin-left:40px;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    padding-right: 180px;
 }
-
 
 .field-group{
     margin: 0;
@@ -38,7 +47,7 @@
 
 .field-group input{
     padding-right: 200px;
-    border: 1px solid #008de7;
+    border: 1px solid #a5a5a5;
     margin-right: 30px;
     color: #fff;
     position: relative;
@@ -50,9 +59,8 @@ input[type=email]{
     background-color: transparent;
     font-size: 15px;
     padding: 0 13px 0 10px;
-    height: 46px;
+    height: 45px;
     outline: none;
-    width: 70%;
-    -webkit-appearance: none;
+    width: 75%;
     border-radius: 0;
 }

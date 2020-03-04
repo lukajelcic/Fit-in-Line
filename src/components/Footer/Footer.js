@@ -12,7 +12,7 @@ function Footer() {
             <div className="footer-content">
                 <div className="email">
                     <div className="icon-email">
-                        <span><img src="https://icon-icons.com/icons2/171/PNG/512/email_green_23345.png" alt="/"></img></span>
+                        <span><img src="/" alt="/"></img></span>
                     </div>
                     <div className="title-email">
                         <h5>Email Address</h5>
