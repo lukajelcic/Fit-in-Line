@@ -21,12 +21,6 @@ class QuestionsHeader extends React.Component {
         const questionsRight = this.state.questionsForRightSide.map(item => <QuestionsRight key={item.id} item={item} />)
         return (
             <div className="questions-main">
-                <div className="questions-main-image">
-                    <span className="image">
-                        <img src="https://i.ya-webdesign.com/images/gym-clipart-strong-boy-28.png" alt="" title=""></img>
-                    </span>
-                </div>
-
                 <div className="questions-heading-text">
                     <div className="inner-text">
                         <h2>Frequently Asked Questions</h2>

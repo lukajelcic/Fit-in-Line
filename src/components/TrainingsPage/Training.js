@@ -18,6 +18,7 @@ class Training extends Component {
         const typeItems = this.state.trainingTypes.map(item => <TrainingType key={item.id} item={item} />)
         return (
             <main className="training-page">
+                            <div className="background"></div>
                 <article className="training-article">
                     <div className="page-head">
                         <header className="header-text">
@@ -31,9 +32,6 @@ class Training extends Component {
 
                         <aside className="training-image">
                             <figure>
-                                <a href="/" className="link-img">
-                                <img src="https://clipartstation.com/wp-content/uploads/2018/09/fitness-clipart-free-7.jpg" id="trn" alt="/"></img>
-                                </a>
                             </figure>
                         </aside>
                     </div>

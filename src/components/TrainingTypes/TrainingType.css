@@ -18,28 +18,11 @@
     justify-content: center;
 }
 
-
-#trn{
-    margin-top: 120px;
-}
-
-.page-head img{
-    height: auto;
-    width: 100%;
-    position: relative;
-}
-
-img{
-    max-width: 100%;
-    object-fit: cover;
-}
-
-
 .main-training{
     padding: 100px 0;
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    grid-column-gap:170px;
+    grid-column-gap:150px;
     margin: auto;
 }
 

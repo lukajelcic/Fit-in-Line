@@ -1,21 +1,9 @@
 .questions-main {
-    padding-top: 0px!important;
+    padding-top: 50px!important;
     padding-left: 0px!important;
     padding-bottom: 0px!important;
     padding-right: 0px!important;
     text-align: center;
-}
-
-.questions-main-image .image{
-    display: inline-block;
-    position: relative;
-    max-width: 600px;
-    margin-top: 5rem;
-}
-
-img{
-    max-width: 100%;
-    height: auto;
 }
 
 .inner-text h2{

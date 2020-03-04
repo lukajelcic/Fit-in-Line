@@ -9,19 +9,18 @@ import './components/TrainingTypes/TrainingType.css'
 import About from './components/About/About';
 import Reserve from './components/Reserve/Reserve';
 import News from './components/News/News'
-import TrainingBtn from './components/Buttons/TrainingBtn'
+import ScrollButton from './components/Buttons/ScrollButton'
 
 class App extends Component {
   render() {
     return (
       <Router history={history}>
         <div className="App">
-
           {/*NAVBAR*/}
           <div className="info-bar">
             <Infobar />
           </div>
-          <TrainingBtn />
+          <ScrollButton />
 
 
           <Switch>
