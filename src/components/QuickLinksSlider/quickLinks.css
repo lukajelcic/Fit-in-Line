@@ -1,5 +1,5 @@
 .linksSlider{
-    height: 600px;
+    height: 400px;
     width: 100%;
     background: gray;
     overflow: hidden;
@@ -11,13 +11,13 @@
 }
 
 .sliderChild{
-    height: 600px;
+    height: 400px;
     width: 500%;
     animation: slider infinite 25s 6s;
 }
 
 .imagecon{
-    height: 600px;
+    height: 400px;
     width: 20%;
     background: gray;
     float: left;

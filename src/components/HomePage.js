@@ -4,6 +4,7 @@ import HeadContent from './HeadContent/HeadContent';
 import QuestionHeader from './Asked Questions/QuestionsHeader'
 import QuickLinks from './QuickLinksSlider/QuickLinks'
 import Newsletter from './Newsletter/Newsletter'
+import MainContent from './MainContent/MainContent'
 
 
 function HomePage() {
@@ -11,6 +12,7 @@ function HomePage() {
         <div className="main-page">
             <QuickLinks />
             <HeadContent />
+            <MainContent />
             <Newsletter />
             <QuestionHeader />
         </div>
