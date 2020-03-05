@@ -14,7 +14,7 @@ class Popup extends React.Component{
                         Close
                     </text>
 
-                    <img src={this.props.popImageUrl} alt="/"></img>
+                    <img src={this.props.popImageUrl} alt="/" style={{width:'450px',height:'450px'}}></img>
                 </div>
             </div>
         )

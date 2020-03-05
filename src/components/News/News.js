@@ -30,6 +30,7 @@ class News extends Component {
                             </p>
                             </div>
                         </div>
+                        <h2 className="entry-title"><a href="/">Aktuelne Vesti</a></h2>
                     </div>
                 </article>
 
