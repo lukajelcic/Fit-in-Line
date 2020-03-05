@@ -8,8 +8,8 @@ class HeadContent extends Component {
         return (
             <div className="main">
                 <div className="heading">
-                        <h1><span>FITNESS &amp; NUTRITION</span></h1>
-                        <h2>SPECIALISTS IN FITNESS AND FATLOSS</h2>
+                        <h1><span>FIT IN LINE GALERIJA</span></h1>
+                        <h2>janka veselinovica 60, Kragujevac</h2>
                 </div>
             </div>
         );

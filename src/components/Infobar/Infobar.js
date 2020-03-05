@@ -29,7 +29,7 @@ class Infobar extends Component {
                             <li><Link to="/news">Vesti</Link></li>
                             <li><a href="/">Ishrana</a></li>
                             <li><Link to="/training">Treninzi</Link></li>
-                            <li><a href="/">Gelerija</a></li>
+                            <li><Link to="/gallery">Galerija</Link></li>
                         </ul>
                     </div>
                 </nav>

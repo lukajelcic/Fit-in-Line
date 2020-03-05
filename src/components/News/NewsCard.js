@@ -9,8 +9,7 @@ function NewsCard(props) {
 
                 <hr style={{ width: '32px',left:'-10px',top:'-5px' }}></hr>
                 <hr style={{ width: '45px',left:'-10px',top:'0px'}}></hr>
-                {/* <img src={tack} alt="/"></img> */}
-
+                
                 <div className="news-img">
                     <a href="/">
                         <img style={{ width: 300, height: 200 }} src={props.item.url} alt="/"></img>

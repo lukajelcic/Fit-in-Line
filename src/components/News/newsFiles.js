@@ -45,7 +45,23 @@ const news =[
         url:"https://i.ndtvimg.com/i/2016-06/gym_625x350_51464850975.jpg",
         content:"Dragi članovi, Po proverenoj recepturi sa Novog Zelanda, 09. jula u Ethnogym na Banjici stižu sjajna, nova les Mills izdanja…",
         views:"8,005",
-        date:"7 June 2019"
+        date:"7.June 2019."
+    },
+    {
+        id:"7",
+        title:"Prolecna Akcija",
+        url:"https://www.muskimagazin.rs/image.php/muski-magazin-hodanje-fitnes-saveti%20(99).jpg?width=600&image=https://www.muskimagazin.rs/chest/gallery/evo-zbog-cega-treba-da-napravite-10000-koraka-svaki-dan/muski-magazin-hodanje-fitnes-saveti%20(99).jpg",
+        content:"Bliži se proleće, vreme je da se pokrenemo! Lepo vreme nam mami osmeh na lice. Dolaze nam lepši dani, budi se dobro raspoloženje.",
+        views:"2,005",
+        date:"4.March 2020."
+    },
+    {
+        id:"8",
+        title:"TANJIR & TRENING",
+        url:"https://static01.nyt.com/images/2018/04/02/well/start-fitness-routine-guide/start-fitness-routine-guide-master768-v2.jpg",
+        content:"Pozivamo vas da dođite na uvodno predavanje koje drži naš nutricionista Kritistina Dmitrović i ostanite da razmenimo mišljenja...",
+        views:"1,542",
+        date:"29.Feb 2020."
     },
 ]
 

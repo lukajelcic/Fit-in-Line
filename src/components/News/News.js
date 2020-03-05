@@ -19,21 +19,17 @@ class News extends Component {
                 <div className="background"></div>
                 <article className="news-article">
                     <div className="page-head">
-                        <header className="header-text">
-                            <h1>{this.props.h1}</h1>
-                            <h2>{this.props.h2}</h2>
-                            <div className="news-text">
-                                <p>
-                                    {this.props.text}
-                                    <strong> Fit in Line.</strong>
-                                </p>
+                        <div className="news-main-image">
+                            <div className="slider-box" style={{ height: '250px' }}>
+                                <h1 className="slider-title">
+                                    Budite u toku sa najnovijim vestima
+                            </h1>
+                                <p className="slider-txt">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </p>
                             </div>
-                        </header>
-
-                        <aside className="news-image">
-                            <figure>
-                            </figure>
-                        </aside>
+                        </div>
                     </div>
                 </article>
 

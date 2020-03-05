@@ -5,11 +5,13 @@ import HomePage from './components/HomePage';
 import { Router, Switch, Route } from 'react-router';
 import history from './components/history';
 import Training from './components/TrainingsPage/Training';
-import './components/TrainingTypes/TrainingType.css'
+import './components/TrainingTypes/TrainingType.css';
 import About from './components/About/About';
 import Reserve from './components/Reserve/Reserve';
-import News from './components/News/News'
-import ScrollButton from './components/Buttons/ScrollButton'
+import News from './components/News/News';
+import ScrollButton from './components/Buttons/ScrollButton';
+import GalleryPage from './components/Gallery/GalleryPage'
+
 
 class App extends Component {
   render() {
@@ -56,6 +58,10 @@ class App extends Component {
                text2="Ethnogym fitnes klub je kreiran tako da svojim članovima pruži osećaj i prednosti sporta.Naša filozofija je bazirana na humanističkim i sportskim vrednostima a naša ekipa profesionalaca je uvek spremna da vas dočeka, sasluša i pruži podršku. To je ekipa uz koju ćete se i zabaviti i dobiti željene rezultate."
                text3="Uz prvoklasnu opremu, efikasne fitnes programe, društvenu atmosferu i instruktore koji su inspirisani fitnesom i orijentisani da vam pruže sportski osećaj, bićete podstaknuti da dostignete željenu fizičku formu.Mi jesmo specijalisti za grupne fitnes programe, ali pored toga održavamo i nezaboravne žurke i fitness događaje!Ethnogym is a community, the fitness community."
                />
+            </Route>
+
+            <Route path="/gallery">
+                <GalleryPage />
             </Route>
 
             <Route path="/">

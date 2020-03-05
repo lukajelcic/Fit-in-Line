@@ -18,7 +18,7 @@ class Training extends Component {
         const typeItems = this.state.trainingTypes.map(item => <TrainingType key={item.id} item={item} />)
         return (
             <main className="training-page">
-                            <div className="background"></div>
+                <div className="background"></div>
                 <article className="training-article">
                     <div className="page-head">
                         <header className="header-text">

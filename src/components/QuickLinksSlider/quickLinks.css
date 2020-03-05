@@ -1,5 +1,5 @@
 .linksSlider{
-    height: 600px;
+    height: 400px;
     width: 100%;
     background: gray;
     overflow: hidden;
@@ -11,13 +11,13 @@
 }
 
 .sliderChild{
-    height: 600px;
+    height: 400px;
     width: 500%;
-    animation: slider infinite 25s 6s;
+    animation: slider infinite 25s 5s;
 }
 
 .imagecon{
-    height: 600px;
+    height: 400px;
     width: 20%;
     background: gray;
     float: left;
@@ -70,7 +70,7 @@
 .slider-box{
     border-left: 6px solid orange;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     width: 500px;
     text-align: left;
     float: left;

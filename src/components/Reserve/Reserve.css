@@ -1,5 +1,5 @@
 .reserve{
-    padding: 50px 0;
+    padding: 10px 0;
     background: rgb(9, 83, 88);
     border-bottom: 2px solid orange;
 }
@@ -8,7 +8,7 @@
     padding: 0 30px;
     margin: auto;
     display: block;
-    position: relative;
+    position: static;
 }
 
 .reserve-title{
