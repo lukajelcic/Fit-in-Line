@@ -18,7 +18,6 @@
 }
 
 .text h2{
-    font-family: 'Noto Sans', sans-serif;
     font-size: 36px;
     line-height: 1.6em;
     color: #000000;
@@ -49,12 +48,32 @@
 }
 
 .badges h5{
-    font-family: 'Maven Pro', sans-serif;
     font-size: 15px;
 }
 
 h5 span{
-    font-weight: 300;
+    font-weight: 400;
+}
+
+@media (max-width: 1000px){
+    .main-content{
+        max-width: 1240px;
+        display: block;
+        margin-top: -30px;
+    }
+    .main-content .text{
+        margin-left: 40px;
+        width: 90%;
+        text-align: justify;
+    }
+    .badges{
+        width: 100%;
+        justify-content: left;
+        margin-left: 40px;
+    }
+    .badges img {
+        margin-bottom: 30px;
+    }
 }
 
 

@@ -9,7 +9,7 @@ function About(props) {
             <div className="background"></div>
             <article className="about-article">
                 <div className="page-head">
-                    <header className="header-text" style={{ width: "45%" }}>
+                    <header className="header-text">
                         <h1>{props.h1}</h1>
                         <h2>{props.h2}</h2>
                         <div className="about-text">

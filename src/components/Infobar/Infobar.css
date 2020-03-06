@@ -1,11 +1,11 @@
-.infobar{
+/* .infobar{
     width: 100%;
     background: rgb(9, 83, 88);
     height: 45px;
     top: 0;
     left: 0;
     right: 0;
-}
+} */
 
 .infobar-navigation{
     display: flex;
@@ -89,7 +89,7 @@
 
 .menubar a:hover,
 .menubar a:active{
-    color: rgb(9, 83, 88);
+    color: #fdcb6e;
 }
 
 .social{
@@ -113,7 +113,39 @@
 
   .fa:hover {
     opacity: 0.7;
-    color: white;
+    color: #fdcb6e;
   }
+
+.menubar{
+    overflow: hidden;
+}
+
+.menubar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.menubar .icon{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .menubar a{display: none;}
+    .responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
 
 

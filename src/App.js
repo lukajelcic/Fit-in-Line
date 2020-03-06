@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Infobar from './components/Infobar/Infobar';
 import Footer from './components/Footer/Footer'
 import HomePage from './components/HomePage';
 import { Router, Switch, Route } from 'react-router';
@@ -11,16 +10,29 @@ import Reserve from './components/Reserve/Reserve';
 import News from './components/News/News';
 import ScrollButton from './components/Buttons/ScrollButton';
 import GalleryPage from './components/Gallery/GalleryPage'
+import Navbar from './components/Infobar/Navbar'
 
 
 class App extends Component {
+  state={
+    navbarOpen:false
+  }
+
+  handleNavbar =()=>{
+    this.setState({navbarOpen:!this.state.navbarOpen})
+  }
+
   render() {
     return (
       <Router history={history}>
         <div className="App">
           {/*NAVBAR*/}
           <div className="info-bar">
-            <Infobar />
+            <Navbar
+              navbarState={this.state.navbarOpen}
+              handleNavbar ={this.handleNavbar}
+            />
+
           </div>
           <ScrollButton />
 

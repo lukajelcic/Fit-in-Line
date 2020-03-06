@@ -140,3 +140,12 @@
     opacity: 0.7;
     color: #666;
   }
+
+  @media(max-width:1400px){
+      .about-article{
+          max-width: 1240px;
+      }
+      .about-article .page-head header{
+          width: 100%;
+      }
+  }

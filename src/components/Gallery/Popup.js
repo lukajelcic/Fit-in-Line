@@ -7,12 +7,12 @@ class Popup extends React.Component{
         return(
             <div className="popupParent">
                 <div className="popupImage">
-                    <text
+                    <p
                     className="imageClosingButton"
                     onClick={this.props.closePopup}
                     >
                         Close
-                    </text>
+                    </p>
 
                     <img src={this.props.popImageUrl} alt="/" style={{width:'450px',height:'450px'}}></img>
                 </div>

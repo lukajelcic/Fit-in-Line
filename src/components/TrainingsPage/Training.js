@@ -29,11 +29,9 @@ class Training extends Component {
                                 <p>{this.props.text2}</p>
                             </div>
                         </header>
-
-                        <aside className="training-image">
-                            <figure>
-                            </figure>
-                        </aside>
+                        <div className="training-image">
+                            <img src="https://images.unsplash.com/photo-1523395294292-1fbf0cd2435e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1359&q=80" alt="/"></img>
+                        </div>
                     </div>
                 </article>
 

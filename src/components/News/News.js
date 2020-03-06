@@ -20,7 +20,7 @@ class News extends Component {
                 <article className="news-article">
                     <div className="page-head">
                         <div className="news-main-image">
-                            <div className="slider-box" style={{ height: '250px' }}>
+                            <div className="slider-box" id="news-sld">
                                 <h1 className="slider-title">
                                     Budite u toku sa najnovijim vestima
                             </h1>
@@ -30,10 +30,11 @@ class News extends Component {
                             </p>
                             </div>
                         </div>
-                        <h2 className="entry-title"><a href="/">Aktuelne Vesti</a></h2>
                     </div>
                 </article>
 
+                <h2 className="news-title">Aktuelne Vesti</h2>
+                <hr className="hr-title" style={{width:'300px',border:'1px solid lightgray'}}></hr>
 
                 <div className="news-wrapper">
                     <div className="main-news">

@@ -9,7 +9,6 @@ class Images extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            imageUrl: "",
             imageUrlArray: [
                 "https://scontent.fbeg10-1.fna.fbcdn.net/v/t1.0-9/317031_103248916458565_359750296_n.jpg?_nc_cat=111&_nc_sid=e007fa&_nc_ohc=J759YOxsI7IAX-jKtwF&_nc_ht=scontent.fbeg10-1.fna&oh=ab55ba11a2835020df3926fcfcee8949&oe=5E999C28",
                 "https://scontent.fbeg10-1.fna.fbcdn.net/v/t1.0-9/310667_103248673125256_1830099480_n.jpg?_nc_cat=110&_nc_sid=e007fa&_nc_ohc=Xj8NRHE5tT8AX--H1sl&_nc_ht=scontent.fbeg10-1.fna&oh=ffa693a0e8875bbecd837e1375723654&oe=5E822A50",
@@ -23,14 +22,6 @@ class Images extends Component {
             popImageUrl: ""
         }
         this.handlePopup = this.handlePopup.bind(this);
-        this.handleLinkChange = this.handleLinkChange.bind(this);
-    }
-
-    handleLinkChange = (e) => {
-        e.preventDefault();
-        this.setState({
-            imageUrl: e.target.value
-        })
     }
 
     handlePopup = (url) => {

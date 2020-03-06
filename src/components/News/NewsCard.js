@@ -7,8 +7,8 @@ function NewsCard(props) {
         <section className="news-card-section">
             <article className="news-card">
 
-                <hr style={{ width: '32px',left:'-10px',top:'-5px' }}></hr>
-                <hr style={{ width: '45px',left:'-10px',top:'0px'}}></hr>
+                <hr className="hr-pin" style={{ width: '32px',left:'-10px',top:'-5px' }}></hr>
+                <hr className="hr-pin" style={{ width: '45px',left:'-10px',top:'0px'}}></hr>
                 
                 <div className="news-img">
                     <a href="/">

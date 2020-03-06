@@ -7,7 +7,6 @@
     text-align: center;
 }
 .footer-heading h3{
-    font-family: 'Merriweather',Georgia,"Times New Roman",serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 1.6em;
@@ -39,13 +38,11 @@
 }
 
 .footer-content h5{
-    font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
 }
 
 .footer-content p{
-    font-family: 'Noto Sans', sans-serif;
     text-transform:lowercase;
     color: #666;
     font-size: 14px;

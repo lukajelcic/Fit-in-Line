@@ -16,6 +16,23 @@
     margin: 30px 30px 30px 30px !important;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+
+.training-image{
+    float: right;
+    /* width: 90%; */
+    /* display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center; */
+}
+
+.training-image img{
+    width: 650px;
+    height: 450px;
+    object-fit: cover;
 }
 
 .main-training{
@@ -39,4 +56,46 @@
 .training-img a:hover img{
     transform: scale(1.2);
     transition: 1s;
+}
+
+@media(max-width:1200px){
+    .training-article{
+        max-width: 1240px;
+    }
+    .training-article .page-head header{
+        width: 100%;
+    }
+    .main-training{
+        justify-content: center;
+        display: block;
+    }
+    .training-card-section{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .training-card h3{
+        text-align: center;
+    }
+    .entry-content p{
+        display: block;
+        text-align: justify;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+    .training-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .training-image img{
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+    }
+    .hr-pin{
+        display: none;
+    }
 }
