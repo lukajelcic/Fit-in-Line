@@ -3,7 +3,7 @@ import React from 'react';
 // import HeadContent from './HeadContent/HeadContent';
 import QuestionHeader from './Asked Questions/QuestionsHeader'
 import QuickLinks from './QuickLinksSlider/QuickLinks'
-import Newsletter from './Newsletter/Newsletter'
+// import Newsletter from './Newsletter/Newsletter'
 import MainContent from './MainContent/MainContent'
 
 
@@ -13,7 +13,7 @@ function HomePage() {
             <QuickLinks />
             {/* <HeadContent /> */}
             <MainContent />
-            <Newsletter />
+            {/* <Newsletter /> */}
             <QuestionHeader />
         </div>
     )

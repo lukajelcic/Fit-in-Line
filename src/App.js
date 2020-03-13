@@ -9,8 +9,9 @@ import About from './components/About/About';
 import Reserve from './components/Reserve/Reserve';
 import News from './components/News/News';
 import ScrollButton from './components/Buttons/ScrollButton';
-import GalleryPage from './components/Gallery/GalleryPage'
-import Navbar from './components/Infobar/Navbar'
+import GalleryPage from './components/Gallery/GalleryPage';
+import Navbar from './components/Infobar/Navbar';
+import NutritionPage from './components/Nutrition/NutritionPage';
 
 
 class App extends Component {
@@ -38,6 +39,11 @@ class App extends Component {
 
 
           <Switch>
+            
+            <Route path="/nutrition">
+              <NutritionPage />
+            </Route>
+            
             <Route path="/news">
               <News h1="Vesti"
                     h2="Budite u toku"
