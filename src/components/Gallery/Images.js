@@ -35,16 +35,14 @@ class Images extends Component {
         let imageUrlArray = this.state.imageUrlArray;
         const images = imageUrlArray.map((url, index) => {
             return (
-                <div className="image">
                     <img
                         className="singleImage"
                         src={url}
-                        key={index}
                         onClick={() => this.handlePopup(url)}
+                        key={index}
                         alt="/"
                     >
                     </img>
-                </div>
             )
         })
         return (

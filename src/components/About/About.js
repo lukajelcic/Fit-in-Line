@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Counter from './Counter.js';
 import './About.css'
+import Media from './Media'
 
 function About(props) {
     return (
@@ -17,12 +19,34 @@ function About(props) {
                             <p>{props.text3}</p>
                         </div>
                     </header>
+                    <div className="team-cards">
+                        <h3>Upoznajte nas tim </h3>
+                        <div className="team">
+                            <div className="coach">
+                                <Media
+                                    img="https://images-na.ssl-images-amazon.com/images/I/71iCPkb3VVL.jpg"
+                                    name="Tanja Nikolic"
+                                    description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                            across all continents except Antarctica"
+                                />
+                            </div>
+
+                            <div className="coach">
+                                <Media
+                                    img="https://s3-us-west-2.amazonaws.com/beachbody-blog/uploads/2019/11/10R-Coach-Window.960.jpg"
+                                    name="Luka Lukic"
+                                    description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                            across all continents except Antarctica"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
 
             <section className="about-list">
                 <div className="list">
-                    <a href="/"><h3 className="about-nutrition">{props.h3}</h3></a>
+                    <Link to="/nutrition"><h3 className="about-nutrition">{props.h3}</h3></Link>
                 </div>
             </section>
 

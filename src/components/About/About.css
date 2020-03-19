@@ -36,6 +36,34 @@
     text-decoration: underline;
 }
 
+.team-cards{
+    position: relative;
+    text-align: center;
+    float: left;
+    margin-left: 65px;
+    margin-top: 50px;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.team-cards h3{
+    text-align: justify;
+    color: rgb(9, 83, 88);
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 40px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.team .coach{
+    margin: 20px 20px 20px 20px;
+}
+
 .list a:hover h3{
     border-left: 15px solid #cf7303!important;
     transition: 0.7s;
@@ -120,32 +148,25 @@
     width: 30px;
     text-align: center;
     color: #3578E5;
-  }
+}
 
-  .fa-twitter{
+#twitter{
     font-size: 30px;
     width: 30px;
     text-align: center;
     color: #00aced;
-  }
+}
 
-  .fa-google{
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    color: #dd4b39;
-  }
-
-  .fa:hover{
+.fa:hover{
     opacity: 0.7;
     color: #666;
-  }
+}
 
-  @media(max-width:1400px){
-      .about-article{
-          max-width: 1240px;
-      }
-      .about-article .page-head header{
-          width: 100%;
-      }
-  }
+@media(max-width:1200px){
+    .about-article{
+        max-width: 1000px;
+    }
+    .about-article .page-head header{
+        width: 100%;
+    }
+}

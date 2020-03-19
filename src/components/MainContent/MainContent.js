@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import badge1 from '../../images/badge1.png'
+import badge2 from '../../images/badge2.png'
+import badge3 from '../../images/badge3.png'
+import badge4 from '../../images/badge4.png'
+
 
 import './MainContent.css'
 
@@ -13,19 +18,19 @@ class MainContent extends Component {
                     <p>We assist male and females either new to training or leading stressful and hectic lifestyles, lose fat and tone their bodies while improving the overall health and fitness and increasing their energy levels.</p>
                 </div>
                 <div className="badges">
-                    <img src="http://fmfitnessnutrition.com/wp-content/uploads/2018/12/nutrition-icon-small-7-1.png" alt=""></img>
+                    <img src={badge1} alt=""></img>
                     <h5 >
                         NUTRITION<span> COACHING</span>
                     </h5>
-                    <img src="https://fmfitnessnutrition.com/wp-content/uploads/2018/12/nutrition-icon-small-6-1.png" alt=""></img>
+                    <img src={badge2} alt=""></img>
                     <h5>
                         PERSONAL<span> TRAINING</span>
                     </h5>
-                    <img src="https://fmfitnessnutrition.com/wp-content/uploads/2018/12/nutrition-icon-small-4-1.png" alt=""></img>
+                    <img src={badge3} alt=""></img>
                     <h5>
                         FAT<span> LOSS</span>
                     </h5>
-                    <img src="https://fmfitnessnutrition.com/wp-content/uploads/2018/12/nutrition-icon-small-5-2.png" alt=""></img>
+                    <img src={badge4} alt=""></img>
                     <h5>
                         GUARANTEED<span> RESULTS</span>
                     </h5>

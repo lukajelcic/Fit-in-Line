@@ -24,7 +24,7 @@ body {
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(http://fmfitnessnutrition.com/wp-content/uploads/2018/12/nutritionist-15.png),radial-gradient(circle at center,#f9f9f4 80%,#ffffff 100%)!important;
+  background-image: url(../src/images/footer.png),radial-gradient(circle at center,#f9f9f4 80%,#ffffff 100%)!important;
   height: 500px;
   width: 100%;
   background-color: #f9f9f4!important;
@@ -38,7 +38,7 @@ body {
 }
 
 .page-head{
-  margin-top: 70px;
+  margin-top: 50px;
   display: inline-block;
   width:90%;
   position: relative;
@@ -111,7 +111,7 @@ figure{
 }
 
 h1,h2,h3,h4{
-  font-family: 'Muli', sans-serif;
+  font-family: 'Baloo Chettan 2', cursive;
 }
 
 h5{
@@ -149,4 +149,7 @@ a{
 }
 
 @media only screen and (max-width: 1200px) {
+  .page-head{
+    width: auto;
+  }
 }

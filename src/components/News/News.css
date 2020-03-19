@@ -133,16 +133,25 @@
     display: inline;
 }
 
-@media(max-width:1200px){
+@media(max-width:1000px){
     .news-main-image{
-        width: 100%;
+        width: 350px;
         height: 700px;
+        display: flex;
     }
     #news-sld{
         padding: 10px;
-        width: 370px;
+        width: 350px;
         height: 400px;
-        text-align: center;
+    }
+    .slider-title{
+        width: 200px;
+    }
+    #news-sld h1{
+        font-size: 30px;
+    }
+    #news-sld p{
+        font-size: 14px;
     }
     .main-news{
         display: block;

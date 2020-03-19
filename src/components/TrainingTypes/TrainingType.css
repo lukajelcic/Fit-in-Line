@@ -22,6 +22,7 @@
 
 .training-image{
     float: right;
+    margin-top: 40px;
     /* width: 90%; */
     /* display: flex;
     justify-content: center;
@@ -31,7 +32,7 @@
 
 .training-image img{
     width: 550px;
-    height: 450px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -76,10 +77,10 @@
         text-align: center;
     }
     .entry-content p{
-        display: block;
+        display: flex;
         text-align: justify;
-        margin-left: 140px;
-        margin-right: 140px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     .training-image{
         width: 100%;

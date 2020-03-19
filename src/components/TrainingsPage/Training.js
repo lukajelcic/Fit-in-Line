@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import TrainingType from '../TrainingTypes/TrainingType';
-
+import trainingImg from '../../images/training-main.jpeg'
 import types from '../TrainingTypes/types';
 // import TrainingBtn from '../Buttons/TrainingBtn';
 
@@ -29,8 +29,10 @@ class Training extends Component {
                                 <p>{this.props.text2}</p>
                             </div>
                         </header>
-                        <div className="training-image">
-                            <img src="https://images.unsplash.com/photo-1523395294292-1fbf0cd2435e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1359&q=80" alt="/"></img>
+                        <div style={{marginTop:'5px'}}>
+                            <div className="training-image">
+                                <img src={trainingImg} alt="/"></img>
+                            </div>
                         </div>
                     </div>
                 </article>

@@ -3,11 +3,13 @@ import React, { Component } from 'react';
 import Images from './Images';
 
 class GalleryPage extends Component {
-    render(props) {
+    render() {
         return (
             <div>
                 <div className="background"></div>
-                <Images/>
+                <div className="image">
+                    <Images />
+                </div>
             </div>
         )
     }
