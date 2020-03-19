@@ -23,8 +23,8 @@ class QuestionsHeader extends React.Component {
             <div className="questions-main">
                 <div className="questions-heading-text">
                     <div className="inner-text">
-                        <h2>Frequently Asked Questions</h2>
-                        <h3>Learn how it Works!</h3>
+                        <h2>Najcesce postavljana pitanja</h2>
+                        <h3>pogledajte kako radi !</h3>
                     </div>
                 </div>
 

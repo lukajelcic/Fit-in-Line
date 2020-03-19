@@ -26,6 +26,7 @@ function About(props) {
                                 <Media
                                     img="https://images-na.ssl-images-amazon.com/images/I/71iCPkb3VVL.jpg"
                                     name="Tanja Nikolic"
+                                    role="Fitness trener i nutricionista"
                                     description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                             across all continents except Antarctica"
                                 />
@@ -34,7 +35,8 @@ function About(props) {
                             <div className="coach">
                                 <Media
                                     img="https://s3-us-west-2.amazonaws.com/beachbody-blog/uploads/2019/11/10R-Coach-Window.960.jpg"
-                                    name="Luka Lukic"
+                                    name="Luka Jelcic"
+                                    role="Fitness trener"
                                     description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                             across all continents except Antarctica"
                                 />

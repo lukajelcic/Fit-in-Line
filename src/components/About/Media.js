@@ -26,7 +26,7 @@ export default function MediaCard(props) {
         <CardMedia
           className={classes.media}
           image={props.img}
-          title="Trener"
+          title={props.role}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
