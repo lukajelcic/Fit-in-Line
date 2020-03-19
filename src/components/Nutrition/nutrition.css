@@ -21,6 +21,7 @@
     background-repeat: repeat;
     background-size: cover;
     background-position: center center;
+    border-bottom: 2px solid orange;
 }
 
 .ntr-title{
