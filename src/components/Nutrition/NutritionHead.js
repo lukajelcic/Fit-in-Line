@@ -4,7 +4,7 @@ import './nutrition.css';
 
 function NutritionHead() {
     return (
-        <div className="ntr-head">
+        <div className="ntr-head" id="nutri">
         </div>
     )
 }

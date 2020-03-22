@@ -7,7 +7,7 @@ function SliderBox(props) {
             <div className="slider-box">
                 <h1 className="slider-title">{props.title}</h1>
                 <p className="slider-txt">{props.content}</p>
-                <RegButton name="Prijavi se" />
+                <RegButton name="Pogledaj vise" />
             </div>
         </div>
     )

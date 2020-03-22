@@ -54,7 +54,7 @@ function About(props) {
 
             <section className="about-list">
                 <div className="list">
-                    <Link to="/nutrition"><h3 className="about-nutrition">{props.program}</h3></Link>
+                    <Link to="/nutrition/#nutri"><h3 className="about-nutrition">{props.program}</h3></Link>
                 </div>
             </section>
 
