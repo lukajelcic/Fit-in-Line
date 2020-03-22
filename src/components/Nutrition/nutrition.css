@@ -24,6 +24,12 @@
     border-bottom: 2px solid orange;
 }
 
+.page-content{
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px 30px 30px;
+}
+
 .ntr-title{
     margin-top: 120px;
     text-align: left;
@@ -32,12 +38,6 @@
     font-weight: 700;
     font-size: 1.8em;
     color:rgb(9, 83, 88);
-}
-
-.page-content{
-    display: flex;
-    justify-content: center;
-    margin: 30px 30px 30px 30px;
 }
 
 .ntr-text{
