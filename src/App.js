@@ -52,12 +52,7 @@ class App extends Component {
             </Route>
 
             <Route path="/training">
-              <Training h1="Treninzi za svakog"
-                h2="Mnoštvo različitih fitness treninga!"
-                text1="Ethnogym je fitnes centar koji vas uvodi u jedan novi način treniranja. Odlična atmosfera na grupnim treninzima i u teretani je ono što čini Ethnogym prepoznatljivim!
-                        Danas je Ethnogym tim sastavljen od najboljih specijalista za fitnes u svakom segmentu grupnih treninga, a na raspolaganju vam stoje i sertifikovani personalni treneri za individualni rad ili rad u manjim grupama (Funkcionalni trening)."
-                text2="Zato, ne oklevajte i slobodno nam se pridružite, rešenje za Vas je ETHNOGYM, odličan način da provedete svoje vreme i ujedno održite ili popravite svoje zdravlje!"
-              />
+              <Training/>
             </Route>
 
             <Route path="/about">

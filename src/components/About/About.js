@@ -22,7 +22,7 @@ function About(props) {
             />
             <div>
                 <h3 className="coach-title">upoznajte <span>NAS TIM</span></h3>
-                <div className="coach-content" style={{ display: 'flex',justifyContent:'center'}}>
+                <div className="coach-content" style={{ display: 'flex', justifyContent: 'center' }}>
                     <div className="coach">
                         <Media
                             img="https://nsc.ie/wp-content/uploads/2015/08/PT-10-300x189.jpg"

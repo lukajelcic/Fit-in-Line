@@ -1,3 +1,48 @@
+.trn-head{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.trn-head{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.trn-head{
+    background-image:linear-gradient(180deg,rgb(241, 245, 249,0.2) 100%,#ffffff 0%), url('../../images/training-main.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid orange;
+}
+
+.trn-title{
+    margin-top: 120px;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    color:rgb(9, 83, 88);
+}
+
+.trn-text{
+    width: 75%;
+}
+
+.types-title{
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.types-title span{
+    font-weight: bold;
+    color: orange;
+}
+
 .training-page{
     border: 0 none;
     padding: 0;
@@ -12,29 +57,12 @@
     width: 100%;
 }
 
-.training-article{
+/* .training-article{
     margin: 30px 30px 30px 30px !important;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.training-image{
-    float: right;
-    margin-top: 40px;
-    /* width: 90%; */
-    /* display: flex;
-    justify-content: center;
-    position: relative;
-    text-align: center; */
-}
-
-.training-image img{
-    width: 550px;
-    height: 400px;
-    object-fit: cover;
-}
+} */
 
 .main-training{
     padding: 100px 0;
