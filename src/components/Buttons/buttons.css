@@ -1,64 +1,63 @@
 .round {
-    position: fixed;
-    margin-top: 60px;
-    width: 60px;
-    height:60px;
-    visibility: visible;
+  position: fixed;
+  margin-top: 60px;
+  width: 60px;
+  height: 60px;
+  visibility: visible;
 }
 
-.round i{
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 10px;
-    transition: all 0.5s ease;
-    cursor: pointer;
+.round i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
-a .down{
-    transform: rotate(45deg);
+a .down {
+  transform: rotate(45deg);
 }
 
 a .up {
-    transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
-a{
-    text-decoration: none;
-    transition : all 0.3s linear;
-    font-weight: bold;
+a {
+  text-decoration: none;
+  transition: all 0.3s linear;
+  font-weight: bold;
 }
 
-a:hover{
-    transform : scale(1.02);
+a:hover {
+  transform: scale(1.02);
 }
 
-.reg-btn{
-    background: #61918a;
-    min-width: 160px;
-    width: auto;
-    color: #fff !important;
-    height: 46px;
-    letter-spacing: 1px;
-    line-height: 45px;
-    padding: 0 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    outline: 0 none;
-    border: 0;
-    cursor: pointer;
-    border-right: 10px solid orange;
-    transform: skew(-15deg,0deg);   
-    float: right;
-    position: static; 
+.reg-btn {
+  background: #61918a;
+  min-width: 160px;
+  width: auto;
+  color: #fff !important;
+  height: 46px;
+  letter-spacing: 1px;
+  line-height: 45px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 0 none;
+  border: 0;
+  cursor: pointer;
+  border-right: 10px solid orange;
+  transform: skew(-15deg, 0deg);
+  float: right;
+  position: static;
 }
 
-@media only screen and (max-width: 600px){
-    .center-con{
-        display: none;
-    }
+@media only screen and (max-width: 600px) {
+  .center-con {
+    display: none;
+  }
 }
 /*KRAJ SCORLA */
-

@@ -11,33 +11,27 @@ class QuickLinks extends React.Component {
                 <div className="sliderChild">
                     <div className="imagecon">
                         <SliderBox
-                            title="Marko"
-                            content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                            title="Fit Plate"
+                            content="Dinamičan tip treninga za samo 30 minuta! Kombinacija vežbi, istezanja i masaže uz vibraciju. Više informacija click na link"
                         />
                     </div>
 
                     <div className="imagecon">
                         <SliderBox
-                            title="Una"
-                            content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                            title="Fit fast"
+                            content=" Dovedite svoje telo u vrhunsku formu za tri meseca uz redovnu fizičku aktivnost i izbalansiranu ishranu. Tromesečni paket treninga i plana ishrane koji će vam pomoći da ostvarite željeni cilj . Više informacija možete dobiti pozivom na broj  br.telefona"
                         />
                     </div>
 
                     <div className="imagecon">
                         <SliderBox
-                            title="Luka"
-                            content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                            title="Fit eat"
+                            content="Individualni plan ishrane na osnovu merenja i vaših ciljeva! Više informacija  click na link"
                         />
                     </div>
                     <div className="imagecon">
                         <SliderBox
                             title="Janko"
-                            content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-                        />
-                    </div>
-                    <div className="imagecon">
-                        <SliderBox
-                            title="Fit"
                             content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
                         />
                     </div>

@@ -1,60 +1,65 @@
-.trn-head{
-    display: flex;
-    width: 100%;
-    height: 100%;
+.trn-head {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.trn-head{
-    height: 300px;
-    width: 100%;
-    margin-bottom: 50px;
+.trn-head {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
-.trn-head{
-    background-image:linear-gradient(180deg,rgb(241, 245, 249,0.2) 100%,#ffffff 0%), url('../../images/training-main.jpeg');
-    background-repeat:no-repeat;
-    background-size: cover;
-    border-bottom: 2px solid orange;
+.trn-head {
+  background-image: linear-gradient(
+      180deg,
+      rgb(241, 245, 249, 0.2) 100%,
+      #ffffff 0%
+    ),
+    url("../../images/training-main.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid orange;
 }
 
-.trn-title{
-    margin-top: 120px;
-    text-align: left;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
-    color:rgb(9, 83, 88);
+.trn-title {
+  margin-top: 120px;
+  text-align: left;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+  color: rgb(9, 83, 88);
 }
 
-.trn-text{
-    width: 75%;
+.trn-text {
+  width: 75%;
 }
 
-.types-title{
-    text-align: center;
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 400;
+.types-title {
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-.types-title span{
-    font-weight: bold;
-    color: orange;
+.types-title span {
+  font-weight: bold;
+  color: orange;
 }
 
-.training-page{
-    border: 0 none;
-    padding: 0;
-    width: 100%;
-    display: inline-block;
+.training-page {
+  border: 0 none;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
 }
 
-.training-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.training-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* .training-article{
@@ -64,63 +69,63 @@
     align-items: center;
 } */
 
-.main-training{
-    padding: 100px 0;
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-column-gap:120px;
-    margin: auto;
+.main-training {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 200px;
+  margin: auto;
 }
 
-.training-card{
-    margin-bottom: 50px !important;
+.training-card {
+  margin-bottom: 50px !important;
+  position: relative;
+}
+
+.training-img {
+  cursor: pointer;
+}
+
+.training-img a:hover img {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+@media (max-width: 1000px) {
+  .training-article .page-head header {
+    width: 100%;
+  }
+  .main-training {
+    justify-content: center;
+    display: block;
+  }
+  .training-card-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .training-card h3 {
+    text-align: center;
+  }
+  .entry-content p {
+    display: flex;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .training-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     position: relative;
-}
-
-.training-img{
-    cursor: pointer;
-}
-
-.training-img a:hover img{
-    transform: scale(1.2);
-    transition: 1s;
-}
-
-@media(max-width:1000px){
-    .training-article .page-head header{
-        width: 100%;
-    }
-    .main-training{
-        justify-content: center;
-        display: block;
-    }
-    .training-card-section{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    .training-card h3{
-        text-align: center;
-    }
-    .entry-content p{
-        display: flex;
-        text-align: justify;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-    .training-image{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
-    .training-image img{
-        width: 400px;
-        height: 350px;
-        object-fit: cover;
-    }
-    .hr-pin{
-        display: none;
-    }
+  }
+  .training-image img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .hr-pin {
+    display: none;
+  }
 }

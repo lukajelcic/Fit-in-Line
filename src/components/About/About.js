@@ -16,9 +16,14 @@ function About(props) {
                 h2="Fitness i teretana Fit in Line se nalazi na lokaciji Janka Veselinovica"
                 h3="Program Ishrane"
                 h4="Pridružite nam se i doživite fantastično iskustvo!"
-                text1="Ethnogym je specijalista u Beogradu za grupne fitnes programe sa više od 200 fitnes časova mesečno i 15 različitih vrsta programa. Od Les Mills programa do yoge, pilatesa, zumbe, cardio boxa…"
-                text2="Ethnogym fitnes klub je kreiran tako da svojim članovima pruži osećaj i prednosti sporta.Naša filozofija je bazirana na humanističkim i sportskim vrednostima a naša ekipa profesionalaca je uvek spremna da vas dočeka, sasluša i pruži podršku. To je ekipa uz koju ćete se i zabaviti i dobiti željene rezultate."
-                text3="Uz prvoklasnu opremu, efikasne fitnes programe, društvenu atmosferu i instruktore koji su inspirisani fitnesom i orijentisani da vam pruže sportski osećaj, bićete podstaknuti da dostignete željenu fizičku formu.Mi jesmo specijalisti za grupne fitnes programe, ali pored toga održavamo i nezaboravne žurke i fitness događaje!Ethnogym is a community, the fitness community."
+                text1="Fitness studio FitInLine osnovan je u Kragujevcu 2011.godine. Osnivač je Tanja Nikolić diplomirani profesor fizičke kulture i savetnik za pravilnu ishranu i suplementaciju."
+                text2="Koncept rada zasnovan je na individualnom pristupu gde trener planira i prati rad vežbača u svakom trenutku. Takav, individualan pristup je jedini ispravan i adekvatan način da od svakog treninga dobijete maksimum."
+                text3="Personalni trening je idealna opcija za sve koji žele da se tokom svakog vežbanja trener maksimalno posveti njima, nadgleda i prati napredak svakog pojedinca. Trener je tu da osmisli treninge i ceo proces kako bi se dostigao glavni cilj vežbača bilo da je to poboljšanje ili održavanje opšteg fizičkog stanja i kondicije, korigovanje težine illi program oporavka i rehabilitacije."
+                text4="Fitness studio FitInLine pored različitih tipova individualnih treninga nudi i nutricionistički plan ishrane. Plan ishrane se pravi nakon merenja i razgovora, u skladu sa individualnim ciljevima pojedinca."
+                text5="Trenutno u ponudi imamo program FitFast (link ka stranici), koji kao naefikasniji program daje i najbrže rezultate, a  predstavlja kombinaciju treninga i plana ishrane."
+                text6="Radno vreme je fleksibilno i radi shodno potrebama korisnika."
+                text7="Ukoliko imate pitanja ili nedoumice, uvek nas možete pozvati i dodatno se informisati na broj -> br.telefona"
+                text8="Mi smo tu zbog vas!"
             />
             <div>
                 <h3 className="coach-title">upoznajte <span>NAS TIM</span></h3>
