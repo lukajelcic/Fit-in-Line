@@ -13,14 +13,11 @@ function About(props) {
             <AboutHead />
             <AboutContent
                 h1="O NAMA"
-                h2="Fitness i teretana Fit in Line se nalazi na lokaciji Janka Veselinovica"
+                h2="Fitness studio FitInLine osnovan je u Kragujevcu 2011.godine. Osnivač je Tanja Nikolić diplomirani profesor fizičke kulture i savetnik za pravilnu ishranu i suplementaciju."
                 h3="Program Ishrane"
-                h4="Pridružite nam se i doživite fantastično iskustvo!"
-                text1="Fitness studio FitInLine osnovan je u Kragujevcu 2011.godine. Osnivač je Tanja Nikolić diplomirani profesor fizičke kulture i savetnik za pravilnu ishranu i suplementaciju."
                 text2="Koncept rada zasnovan je na individualnom pristupu gde trener planira i prati rad vežbača u svakom trenutku. Takav, individualan pristup je jedini ispravan i adekvatan način da od svakog treninga dobijete maksimum."
                 text3="Personalni trening je idealna opcija za sve koji žele da se tokom svakog vežbanja trener maksimalno posveti njima, nadgleda i prati napredak svakog pojedinca. Trener je tu da osmisli treninge i ceo proces kako bi se dostigao glavni cilj vežbača bilo da je to poboljšanje ili održavanje opšteg fizičkog stanja i kondicije, korigovanje težine illi program oporavka i rehabilitacije."
-                text4="Fitness studio FitInLine pored različitih tipova individualnih treninga nudi i nutricionistički plan ishrane. Plan ishrane se pravi nakon merenja i razgovora, u skladu sa individualnim ciljevima pojedinca."
-                text5="Trenutno u ponudi imamo program FitFast (link ka stranici), koji kao naefikasniji program daje i najbrže rezultate, a  predstavlja kombinaciju treninga i plana ishrane."
+                text4="Fitness studio FitInLine pored različitih tipova individualnih treninga nudi i nutricionistički plan ishrane. Plan ishrane se pravi nakon merenja i razgovora, u skladu sa individualnim ciljevima pojedinca. Trenutno u ponudi imamo program FitFast (link ka stranici), koji kao naefikasniji program daje i najbrže rezultate, a  predstavlja kombinaciju treninga i plana ishrane."
                 text6="Radno vreme je fleksibilno i radi shodno potrebama korisnika."
                 text7="Ukoliko imate pitanja ili nedoumice, uvek nas možete pozvati i dodatno se informisati na broj -> br.telefona"
                 text8="Mi smo tu zbog vas!"

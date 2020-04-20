@@ -62,17 +62,10 @@
   width: 100%;
 }
 
-/* .training-article{
-    margin: 30px 30px 30px 30px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .main-training {
   padding: 100px 0;
   display: grid;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 200px 200px 200px 200px;
   grid-column-gap: 200px;
   margin: auto;
 }
