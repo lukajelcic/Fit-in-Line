@@ -20,7 +20,7 @@ class Training extends Component {
             <main className="page-head" style={{ width: '100%', margin: '0', position: 'static' }}>
                 <div className="background"></div>
                 <TrainingHead />
-                <h3 className="types-title">Sve vrste <span>treninga</span></h3>
+                <h3 className="types-title">Sve vrste <span>treninga </span></h3>
                 <div className="training-wrapper">
                     <div className="main-training">
                         {typeItems}

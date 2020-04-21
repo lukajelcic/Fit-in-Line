@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Counter from './Counter.js';
 import './About.css'
 import AboutHead from './AboutHead.js';
@@ -8,7 +7,7 @@ import AboutContent from './AboutContent.js';
 function About(props) {
     return (
         <main className="page-head" style={{ width: '100%', margin: '0', position: 'static' }}>
-            <div className="container-fluid" className="background"></div>
+            <div className="container-fluid background"></div>
             <AboutHead />
             <AboutContent
                 h1="O NAMA"
@@ -21,12 +20,6 @@ function About(props) {
                 text7="Ukoliko imate pitanja ili nedoumice, uvek nas možete pozvati i dodatno se informisati na broj -> br.telefona"
                 text8="Mi smo tu zbog vas!"
             />
-            <section className="about-list">
-                <div className="list">
-                    <Link to="/nutrition/#nutri"><h3 className="about-nutrition">{props.program}</h3></Link>
-                </div>
-            </section>
-
             <hr />
 
             <p className="cta-text">Ne držite nas samo za sebe, šerujte!</p>

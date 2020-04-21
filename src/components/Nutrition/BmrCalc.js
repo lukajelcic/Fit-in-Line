@@ -209,7 +209,7 @@ class BmrCalc extends Component {
                         <div className="result">
                             <span>{this.state.bmr}</span>
                             <br />
-                        Tvoj BMR
+                        Vas BMR
                         <hr />
                             <span>{this.state.calories}</span>
                             <br />

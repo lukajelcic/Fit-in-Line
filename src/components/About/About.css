@@ -81,13 +81,13 @@
 }
 
 .about-list {
-  margin: 30px 30px 30px 30px !important;
+  margin: 50px 30px 30px 0 !important;
   display: flex;
   justify-content: center;
 }
 
 .list {
-  width: 90%;
+  width: 100%;
   position: relative;
   display: inline-block;
 }
