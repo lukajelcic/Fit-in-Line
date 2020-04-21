@@ -12,10 +12,6 @@ body {
   padding: 0;
 }
 
-form{
-  width: 30%;
-}
-
 .questions-div {
   padding-top: 0px;
   padding-right: 0px;
@@ -45,7 +41,7 @@ form{
 .page-head {
   margin-top: 50px;
   display: inline-block;
-  width: 90%;
+  width: 100%;
   position: relative;
 }
 
@@ -128,7 +124,6 @@ figure {
   background-size: cover;
   background-position: center;
   position: fixed;
-  box-sizing: border-box;
   z-index: -1;
 }
 

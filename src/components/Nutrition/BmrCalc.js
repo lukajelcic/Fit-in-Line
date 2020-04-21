@@ -4,13 +4,16 @@ class BmrCalc extends Component {
     constructor() {
         super();
         this.state = {
-            age: '',
+            name: '',
             weight: '',
             height: '',
+            age: '',
             gender: '',
-            bmr: 0,
-            activity:'',
-            message: ''
+            activity: '',
+            bmr: '',
+            calories: '',
+            message: '',
+            isSubmited: false
         }
         this.handleChange = this.handleChange.bind(this);
     }
@@ -23,141 +26,196 @@ class BmrCalc extends Component {
     }
 
     calculateBMR = () => {
-        let maleNum = 87.4;
-        let femaleNum = 447.6;
-        let maleBmr = maleNum + (13.4 * this.state.weight) + (4.8 * this.state.height) - (5.6 * this.state.age);
-        let femaleBmr = femaleNum + (9.2 * this.state.weight) + (3.1 * this.state.height) - (4.3 * this.state.age);
-
-        if(this.state.gender == 'male' && this.state.activity == 'no-activity'){
-            this.setState({bmr:maleBmr + 250})
-        }else if(this.state.gender == 'male' && this.state.activity == 'small-activity'){
-            this.setState({bmr:maleBmr + 500})
-        }else if(this.state.gender == 'male' && this.state.activity == 'good-activity'){
-            this.setState({bmr:maleBmr + 600})
-        }else if(this.state.gender == 'male' && this.state.activity == 'intense-activity'){
-            this.setState({bmr:maleBmr + 700})
+        if (this.state.gender == "muski") {
+            this.setState({ bmr: 87.4 + (13.4 * this.state.weight) + (4.8 * this.state.height) - (5.6 * this.state.age) })
+        } else if (this.state.gender == "zenski") {
+            this.setState({ bmr: 447.6 + (9.2 * this.state.weight) + (3.1 * this.state.height) - (4.3 * this.state.age) })
         }
 
-        if(this.state.gender == 'female' && this.state.activity == 'no-activity'){
-            this.setState({bmr:femaleBmr + 250})
-        }else if(this.state.gender == 'female' && this.state.activity == 'small-activity'){
-            this.setState({bmr:femaleBmr + 500})
-        }else if(this.state.gender == 'female' && this.state.activity == 'good-activity'){
-            this.setState({bmr:femaleBmr + 600})
-        }else if(this.state.gender == 'female' && this.state.activity == 'intense-activity'){
-            this.setState({bmr:femaleBmr + 700})
+        if (this.state.activity == "no-activity") {
+            this.setState(prevState => ({
+                calories: prevState.bmr * (1.20)
+            }))
+        } else if (this.state.activity == "small-activity") {
+            this.setState(prevState => ({
+                calories: prevState.bmr * (1.40)
+            }))
         }
-        this.setState({message:'kalorija vam je potrebno po danu!'})
+        else if (this.state.activity == "good-activity") {
+            this.setState(prevState => ({
+                calories: prevState.bmr * (1.50)
+            }))
+        }
+        else if (this.state.activity == "intense-activity") {
+            this.setState(prevState => ({
+                calories: prevState.bmr * (1.70)
+            }))
+        }
+        else if (this.state.activity == "very-intense-activity") {
+            this.setState(prevState => ({
+                calories: prevState.bmr * (1.90)
+            }))
+        }
+
     }
 
-    // checkActivity = () =>{
-    //     if(this.state.activity == 'no-activity') {
-    //         this.setState({bmr:this.state.bmr + 250})
-    //     }else if(this.state.activity == 'small-activity' ){
-    //         this.setState({bmr:this.state.bmr + 500})
-    //     }else if(this.state.activity == 'good-activity'){
-    //         this.setState({bmr:this.state.bmr+600})
-    //     }else if(this.state.activity == 'intense-activity'){
-    //         this.setState({bmr:this.state.bmr + 700})
-    //     }
-    // }
-
-    clearFields =()=>{
+    clearFields = () => {
         this.setState({
-            age: '',
             weight: '',
             height: '',
+            age: '',
             gender: '',
+            activity: '',
             bmr: '',
-            message: '',
+            calories: '',
+            message: ''
         })
+        this.closeResult();
     }
 
-    handleSubmit =(e)=>{
-        e.preventDefault();
+    openResult = () => {
+        this.setState({
+            isSubmited: true
+        })
+    }
+    closeResult = () => this.setState({ isSubmited: false })
+
+    handleSubmit = (e) => {
         this.calculateBMR();
+        this.openResult();
+        e.preventDefault();
     }
 
     render() {
+        const { isSubmited } = this.state
         return (
-            <div className="container-fluid">
+            <div className="bmr_wrap">
+                <div className="bmr_form">
+                    <form onSubmit={this.handleSubmit}>
+                        <h3>BMR Kalkulator</h3>
+                        <div className="form-row">
+                            <div className="col-sm-12">
+                                <label>Ime:</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    className="form-control"
+                                    value={this.state.name}
+                                    onChange={this.handleChange}
+                                    placeholder="Ime i prezime"
+                                    required />
+                            </div>
+                        </div>
+                        <div className="form-row">
+                            <div className="col-sm-6">
+                                <label>Tezina:</label>
+                                <input
+                                    type="text"
+                                    name="weight"
+                                    className="form-control"
+                                    value={this.state.weight}
+                                    onChange={this.handleChange}
+                                    placeholder="Tezina u kg"
+                                    required />
+                            </div>
+                            <div className="col-sm-6">
+                                <label>Visina:</label>
+                                <input
+                                    type="text"
+                                    name="height"
+                                    className="form-control"
+                                    value={this.state.height}
+                                    onChange={this.handleChange}
+                                    placeholder="Visina u cm"
+                                    required />
+                            </div>
+                        </div>
 
-                <form onSubmit={this.handleSubmit}>
-                    <legend>BMR Kalkulator</legend>
-                    <div className="form-group">
-                        <label>Tezina:</label>
-                        <input type="text"
-                            name="weight"
-                            className="form-control"
-                            value={this.state.weight}
-                            size="20"
-                            placeholder="Uneti tezinu u kg"
-                            onChange={this.handleChange}
-                            required />
-                    </div>
+                        <div className="form-row">
+                            <div className="col-sm-12">
+                                <label>Godine:</label>
+                                <input
+                                    type="text"
+                                    name="age"
+                                    className="form-control"
+                                    value={this.state.age}
+                                    onChange={this.handleChange}
+                                    placeholder="Broj godina"
+                                    required />
+                            </div>
+                        </div>
 
-                    <div className="form-group">
-                        <label>Visina:</label>
-                        <input type="text"
-                            name="height"
-                            className="form-control"
-                            value={this.state.height}
-                            size="20"
-                            placeholder="Uneti visinu u cm"
-                            onChange={this.handleChange}
-                            required />
-                    </div>
+                        <div className="form-row">
+                            <div className="col-sm-6">
+                                <label>Pol:</label>
+                                <select
+                                    className="custom-select"
+                                    value={this.state.gender}
+                                    className="form-control"
+                                    name="gender"
+                                    onChange={this.handleChange}
+                                    required>
+                                    <option value="">-Izaberite pol-</option>
+                                    <option value="muski">Muski</option>
+                                    <option value="zenski">Zenski</option>
+                                </select>
+                            </div>
 
-                    <div className="form-group">
-                        <label>Godine:</label>
-                        <input type="text"
-                            name="age"
-                            className="form-control"
-                            value={this.state.age}
-                            size="20"
-                            placeholder="Uneti broj godina"
-                            onChange={this.handleChange}
-                            required />
-                    </div>
+                            <div className="col-sm-6">
+                                <label>Nivo aktivnosti:</label>
+                                <select
+                                    className="custom-select"
+                                    className="form-control"
+                                    value={this.state.activity}
+                                    name="activity"
+                                    onChange={this.handleChange}
+                                    required>
+                                    <option value="">-Izaberite vas nivo aktivnosti-</option>
+                                    <option value="no-activity">Bez vezbanja</option>
+                                    <option value="small-activity">Vezbanje 1-3 puta nedeljno</option>
+                                    <option value="good-activity">Vezbanje 4-5 puta nedeljno</option>
+                                    <option value="intense-activity">Intenzivno vežbanje 6-7 puta nedeljno</option>
+                                    <option value="very-intense-activity">Veoma intenzivno vežbanje svaki dan</option>
+                                </select>
+                            </div>
 
-                    <select className="custom-select"
-                    value={this.state.gender}
-                    name="gender"
-                    onChange={this.handleChange}
-                    >
-                        <option value="">-Izaberite pol-</option>
-                        <option value="male">Muski</option>
-                        <option value="female">Zenski</option>
-                        
-                    </select>
+                            <div className="form_btns">
+                                <div className="form-row">
+                                    <div className="col-sm-6">
+                                        <button
+                                            type="button"
+                                            className="btn btn-danger"
+                                            onClick={this.clearFields}>
+                                            Reset
+                                            </button>
+                                    </div>
+                                    <div className="col-sm-6">
+                                        <button
+                                            type="submit"
+                                            className="btn btn-info">
+                                            Submit
+                                            </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
-                    <select className="custom-select"
-                    value={this.state.activity}
-                    name="activity"
-                    onChange={this.handleChange}
-                    >
-                        <option value="">-Izaberite vas nivo aktivnosti-</option>
-                        <option value="no-activity">Bez vezbanja</option>
-                        <option value="small-activity">Vezbanje 1-3 puta nedeljno</option>
-                        <option value="good-activity">Vezbanje 4-5 puta nedeljno</option>
-                        <option value="intense-activity">Intenzivno vežbanje 6-7 puta nedeljno</option>
-                    </select>
-
-                    <div className="form-group">
-                        <label>BMR:</label>
-                        <input type="text"
-                            name="bmr"
-                            className="form-control"
-                            value={this.state.bmr} 
-                            placeholder="Rezultat-BMR"
-                            readOnly />
-                            <strong>{this.state.message}</strong>
-                    </div>
-
-                    <button type="button" className="btn btn-danger" onClick={this.clearFields}>Reset</button>
-                    <button type="submit" className="btn btn-primary">Izracunaj BMR</button>
-                    <br />
-                </form>
+                <div className="bmr_res">
+                    <h3>BMR Rezultat</h3>
+                    <small>ovde ce vam se prikazati vas BMR rezultat</small>
+                    {isSubmited ?
+                        <div className="result">
+                            <span>{this.state.bmr}</span>
+                            <br />
+                        Tvoj BMR
+                        <hr />
+                            <span>{this.state.calories}</span>
+                            <br />
+                        Unositi kalorija po danu
+                    </div> : null}
+                </div>
             </div>
         )
     }

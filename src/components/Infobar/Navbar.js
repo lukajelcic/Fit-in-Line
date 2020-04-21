@@ -58,7 +58,7 @@ export default Navbar
 const NavBar = styled(animated.nav)`
   position: relative;
   display:flex;
-  width: 97.6%;
+  width: 100%;
   top: 0;
   left: 0;
   background:rgb(9, 83, 88);

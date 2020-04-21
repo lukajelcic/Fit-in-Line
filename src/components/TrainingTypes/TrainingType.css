@@ -65,13 +65,12 @@
 .main-training {
   padding: 100px 0;
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-column-gap: 200px;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-column-gap: 100px;
   margin: auto;
 }
 
 .training-card {
-  margin-bottom: 50px !important;
   position: relative;
 }
 

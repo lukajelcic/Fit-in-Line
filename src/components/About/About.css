@@ -52,27 +52,14 @@
   font-weight: 500;
   color: rgb(9, 83, 88);
 }
-
-.coach {
-  margin: 50px 50px;
+.coach-content {
+  margin-top: 40px;
 }
 
 .coach-title {
-  text-align: center;
   font-size: 36px;
   text-transform: uppercase;
   font-weight: 400;
-}
-
-.coach-title span {
-  font-weight: bold;
-  color: orange;
-}
-
-.coach-content {
-  display: flex;
-  justify-content: center;
-  margin: 30px 30px 30px 30px;
 }
 
 .about-nutrition {
@@ -122,14 +109,12 @@
   color: black !important;
   font-weight: 400;
   font-size: 1.4em;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .counter {
-  display: inline-block;
   width: 100%;
   clear: both;
-  margin-left: 40px;
 }
 
 .counter p {
@@ -158,7 +143,6 @@
 .icons-div {
   display: flex;
   align-items: center;
-  margin-top: 60px;
 }
 
 .fa {

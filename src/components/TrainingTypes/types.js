@@ -1,7 +1,7 @@
 const types = [
     {
         id: "1",
-        title: "Fit In 50st, 60st, 70st…. (trening za starije) -",
+        title: "Fit In 50st, 60st, 70st (za starije)",
         url: "https://fitnesstogether.com/files/frontend/cropped/ftbanner11.jpg",
         text: "Ne postoje godine  u kojima je kontraindikovano vežbanje. Samo je potrebno vežbu i trening prilagoditi godinama i zdravstvenom statusu",
         textAll: "Zato je potrebno da imate svog trenera i da trening bude isplaniran i sproveden tako da što duže održi vitalnost vašeg organizma, njegovu funkcionalnost i dobro fizičko stanje. Uz prave vežbe i odgovarajući  trening možete zaustaviti proces starenja i poboljšati svoje zdravlje.",
@@ -27,7 +27,7 @@ const types = [
     },
     {
         id: "3",
-        title: "FUNKCIONALNI TRENING",
+        title: "Funkcionali trening",
         url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9HNBRT1jXTx0AvFpIjgC5kkUWTKOVpQb1DEsPMtL8ksHupJHC",
         text: "Funkcionalni trening predstavlja korišćenje osnovnih pokreta i vežbi koje su izvedene iz prirodnog kretanja. Njegov osnovni cilj je da nas pripremi za osnovne, svakodnevne aktivnosti.",
         trng_h2: "Ovakvim treningom možemo da postignemo mnogo.",
@@ -41,7 +41,7 @@ const types = [
         li8: "Poboljšanje pravilnog držanja tela…",
     },
     {
-        id: "6",
+        id: "4",
         title: "Fit fast program",
         url: "https://cnet3.cbsistatic.com/img/zAME7LNqsjGHz2122mOaBckd844=/2019/11/09/e3b5e6da-5d8d-4651-88ec-9e1979ef9535/gettyimages-1034882426.jpg",
         text: "Fit fast je tromesečni program kojim ćete dobiti sve što vam je potrebno za brzu i uspešnu transformaciju tela, treninge i plan ishrane. Ovaj program je namenjen svima onima koji bi hteli da na brz, efikasan i zdrav način dođu do željene težine.",

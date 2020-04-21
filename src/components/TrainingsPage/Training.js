@@ -20,13 +20,20 @@ class Training extends Component {
             <main className="page-head" style={{ width: '100%', margin: '0', position: 'static' }}>
                 <div className="background"></div>
                 <TrainingHead />
+                <h3 className="types-title">Sve vrste <span>treninga</span></h3>
+                <div className="training-wrapper">
+                    <div className="main-training">
+                        {typeItems}
+                    </div>
+                </div>
+                <hr style={{ width: '90%' }}></hr>
                 <TrainingContent
                     h1="Treninzi za svakog"
                     h2="Mnoštvo različitih fitness treninga!"
                     text1="Redovna fizička aktivnost je neophodan preduslov ka fizički i psihički zdravom pojedincu. Prednosti koje nam bavljenje sportom donosi su mnogobrojne."
                     sub1="1) Vežbanje održava i unapređuje zdravlje"
-                    sub2="3) Vežbanje usporava starenje"
-                    sub3="4) Vežbanje kontroliše telesnu težinu"
+                    sub2="2) Vežbanje usporava starenje"
+                    sub3="3) Vežbanje kontroliše telesnu težinu"
                     sub4="4) Vežbanje poboljšava raspoloženje"
                     sub5="5) Vežbanje povećava energiju"
                     sub6="6) Vežbanje utiče na dobar san"
@@ -39,14 +46,8 @@ class Training extends Component {
                     c6="Redovna fizička aktivnost može vam pomoći da lakše zaspite i da kvalitetnije spavate. Vreme treninga je potrebno prilagoditi svojim navikama i izbegavati trening blizu vremena za spavanje."
                     c7="Vežba i fizička aktivnost mogu biti prijatni. Tako i treba da birate aktivnosti kojima će te se baviti. Od tipa treninga, atmosfere, trenera… To vam daje priliku da se opustite, uživate, budete zadovoljni i srećni."
                 />
-                <hr style={{ width: '90%' }}></hr>
 
-                <h3 className="types-title">Sve vrste <span>treninga</span></h3>
-                <div className="training-wrapper">
-                    <div className="main-training">
-                        {typeItems}
-                    </div>
-                </div>
+
             </main>
         )
     }

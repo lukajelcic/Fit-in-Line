@@ -1,12 +1,3 @@
-/* .infobar{
-    width: 100%;
-    background: rgb(9, 83, 88);
-    height: 45px;
-    top: 0;
-    left: 0;
-    right: 0;
-} */
-
 .infobar-navigation{
     display: flex;
     align-items: center;

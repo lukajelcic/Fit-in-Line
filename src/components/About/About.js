@@ -2,14 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Counter from './Counter.js';
 import './About.css'
-import Media from './Media'
 import AboutHead from './AboutHead.js';
 import AboutContent from './AboutContent.js';
 
 function About(props) {
     return (
         <main className="page-head" style={{ width: '100%', margin: '0', position: 'static' }}>
-            <div className="background"></div>
+            <div className="container-fluid" className="background"></div>
             <AboutHead />
             <AboutContent
                 h1="O NAMA"
@@ -22,46 +21,13 @@ function About(props) {
                 text7="Ukoliko imate pitanja ili nedoumice, uvek nas možete pozvati i dodatno se informisati na broj -> br.telefona"
                 text8="Mi smo tu zbog vas!"
             />
-            <div>
-                <h3 className="coach-title">upoznajte <span>NAS TIM</span></h3>
-                <div className="coach-content" style={{ display: 'flex', justifyContent: 'center' }}>
-                    <div className="coach">
-                        <Media
-                            img="https://nsc.ie/wp-content/uploads/2015/08/PT-10-300x189.jpg"
-                            role="Trener"
-                            name="Tanja Nikolic"
-                            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                        />
-                    </div>
-
-                    <div className="coach">
-                        <Media
-                            img="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Two_people_in_a_gym_using_BOSU_balls.jpg/1200px-Two_people_in_a_gym_using_BOSU_balls.jpg"
-                            role="Trener"
-                            name="Luka Jelcic"
-                            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                        />
-                    </div>
-
-                    <div className="coach">
-                        <Media
-                            img="https://o2fitnessclubs.com/wp-content/uploads/2018/05/1X1A1536-Edit-e1526250979627.jpg"
-                            role="Trener"
-                            name="Una Nikolic"
-                            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                        />
-                    </div>
-                </div>
-            </div>
-
             <section className="about-list">
                 <div className="list">
                     <Link to="/nutrition/#nutri"><h3 className="about-nutrition">{props.program}</h3></Link>
                 </div>
             </section>
 
-
-            <hr></hr>
+            <hr />
 
             <p className="cta-text">Ne držite nas samo za sebe, šerujte!</p>
 
