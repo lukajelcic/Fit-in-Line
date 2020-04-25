@@ -61,6 +61,7 @@ class BmrCalc extends Component {
 
     clearFields = () => {
         this.setState({
+            name: '',
             weight: '',
             height: '',
             age: '',
@@ -73,11 +74,7 @@ class BmrCalc extends Component {
         this.closeResult();
     }
 
-    openResult = () => {
-        this.setState({
-            isSubmited: true
-        })
-    }
+    openResult = () => this.setState({ isSubmited: true })
     closeResult = () => this.setState({ isSubmited: false })
 
     handleSubmit = (e) => {
