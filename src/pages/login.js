@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+import axios from 'axios';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 //MUI Stuff
 import Grid from '@material-ui/core/Grid';
@@ -10,9 +10,9 @@ import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import withStyles from '@material-ui/core/styles/withStyles';
 
-//Redux stuff
 import { connect } from 'react-redux';
 import { loginUser } from '../redux/actions/userActions';
+
 
 const styles = {
     form: {
@@ -40,6 +40,7 @@ class login extends Component {
     constructor() {
         super()
         this.state = {
+            loading: false,
             email: '',
             password: '',
             errors: {}
@@ -52,7 +53,7 @@ class login extends Component {
             email: this.state.email,
             password: this.state.password
         }
-        this.props.loginUser(userData, this.props.hisory);
+        this.props.loginUser(userData, this.props.history.push('/fit-blog'))
     }
 
     handleChange = (e) => {
@@ -62,6 +63,7 @@ class login extends Component {
     }
 
     render() {
+        const { errors } = this.state
         const { classes, UI: { loading } } = this.props
         return (
             <Grid container className={classes.form}>
@@ -120,7 +122,7 @@ login.propTypes = {
 const mapStateToProps = (state) => ({
     user: state.user,
     UI: state.UI
-})
+});
 
 const mapActionsToProps = {
     loginUser

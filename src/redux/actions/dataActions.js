@@ -8,6 +8,7 @@ import {
     LOADING_UI
 } from '../types';
 
+
 import axios from 'axios';
 
 export const getNews = () => dispatch => {
@@ -42,5 +43,25 @@ export const postBlog = (newBlog) => (dispatch) => {
                 type: SET_ERRORS,
                 payload: err.response.data
             })
+        })
+}
+
+export const uploadImage = (formData) => (dispatch) => {
+    axios.post('/news/newsId', formData)
+        .then(() => {
+            console.log('Successfully')
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+export const deleteBlog = (newsId) => (dispatch) => {
+    axios.delete(`/news/${newsId}`)
+        .then(() => {
+            dispatch({ type: DELETE_POST, payload: newsId })
+        })
+        .catch(err => {
+            console.log(err);
         })
 }

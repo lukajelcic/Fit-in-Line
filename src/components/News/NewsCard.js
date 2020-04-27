@@ -1,26 +1,34 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import withstyles from '@material-ui/core/styles/withStyles';
 import { Link } from 'react-router-dom';
-
-
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import DeleteBlog from './DeleteBlog';
+
+
 const styles = {
 
 }
 class NewsCard extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const {
             classes,
             blog: {
+                newsId,
                 body,
                 title,
+                userHandle,
+                userImage,
                 imageUrl
+            },
+            user: {
+                authenticated,
             }
         } = this.props;
+
+        const deleteButton = authenticated ? (
+            <DeleteBlog newsId={newsId} />
+        ) : null
         return (
             <section className="news-card-section" >
                 <article className="news-card">
@@ -33,12 +41,13 @@ class NewsCard extends Component {
                             <img style={{ width: 300, height: 200 }} src={imageUrl} alt="/"></img>
                         </a>
                     </div>
-
+                    {deleteButton}
                     <h3 className="entry-title"><a href="/">{title}</a></h3>
 
                     <div className="entry-content">
                         <p>{body}</p>
                     </div>
+
                 </article>
             </section>
         )
@@ -50,6 +59,7 @@ NewsCard.propTypes = {
     classes: PropTypes.object.isRequired,
     blog: PropTypes.object.isRequired
 }
+
 const mapStateToProps = state => ({
     user: state.user
 });

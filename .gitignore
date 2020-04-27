@@ -4,9 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-/until
-/redux
-/pages
+/src/until
+/src/redux
+/src/pages
 
 
 # testing

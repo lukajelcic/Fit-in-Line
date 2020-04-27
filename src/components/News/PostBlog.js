@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
 import withStyles from '@material-ui/core/styles/withStyles';
 import MyButton from '../../util/MyButton';
+import PropTypes from 'prop-types';
 
 //MUI
 import TextField from '@material-ui/core/TextField';
@@ -10,11 +10,14 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import AddIcon from '@material-ui/icons/Add';
 import CloseIcon from '@material-ui/icons/Close';
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import EditIcon from '@material-ui/icons/Edit';
 
-//REDUX
 import { connect } from 'react-redux';
-import { postBlog } from '../../redux/actions/dataActions';
+import { postBlog, uploadImage } from '../../redux/actions/dataActions';
+import { logoutUser } from '../../redux/actions/userActions';
+
 
 const styles = {
     textField: {
@@ -33,12 +36,16 @@ const styles = {
     }
 }
 
+
 class PostBlog extends Component {
-    state = {
-        open: false,
-        title: '',
-        body: '',
-        errors: {}
+    constructor() {
+        super();
+        this.state = {
+            open: false,
+            title: '',
+            body: '',
+            errors: {}
+        }
     }
 
     handleOpen = () => {
@@ -66,71 +73,124 @@ class PostBlog extends Component {
             body: this.state.body
         }
         this.props.postBlog(newNews);
+        this.setState({ open: false });
+    }
+
+    handleUploadImage = (e) => {
+        const image = e.target.files[0];
+        const formData = new FormData();
+        formData.append('image', image, image.name)
+
+        this.props.uploadImage(formData);
+    }
+
+    handleEditPicture = () => {
+        const fileInput = document.getElementById('imageInput')
+        fileInput.click();
+    }
+
+    handleLogout = () => {
+        this.props.logoutUser();
     }
 
     render() {
-        const { classes } = this.props
+        const { errors } = this.state
+        const { classes, UI: { loading }, user: { authenticated }, data: { blog: { imageUrl } } } = this.props
         return (
             <Fragment>
                 <MyButton tip="Postavi Blog" onClick={this.handleOpen}>
-                    <AddIcon />
+                    <AddIcon color="primary" />
                 </MyButton>
 
-                <Dialog
-                    open={this.state.open}
-                    onClose={this.handleClose}
-                    fullWidth
-                    maxWidth="sm">
+                <MyButton tip='Odjavi se' onClick={this.handleLogout}>
+                    <ExitToAppIcon color='primary' />
+                </MyButton>
 
-                    <MyButton tip="Zatvori" onClick={this.handleClose} tipClassName={classes.closeButton}>
-                        <CloseIcon />
-                    </MyButton>
+                {authenticated ?
+                    <Dialog
+                        open={this.state.open}
+                        onClose={this.handleClose}
+                        fullWidth
+                        maxWidth="sm">
 
-                    <DialogTitle>Postavi Blog</DialogTitle>
+                        <MyButton tip="Zatvori" onClick={this.handleClose} tipClassName={classes.closeButton}>
+                            <CloseIcon />
+                        </MyButton>
 
-                    <DialogContent>
-                        <form onSubmit={this.handleSubmit}>
-                            <TextField
-                                name="title"
-                                id="title"
-                                label="Naslov"
-                                value={this.state.title}
-                                onChange={this.handleChange}
-                                fullWidth
-                                className={classes.textField}
-                                placeholder="Naslov bloga" />
+                        <DialogTitle>Postavi Blog</DialogTitle>
 
-                            <TextField
-                                name="body"
-                                id="body"
-                                label="Sadrzaj"
-                                value={this.state.body}
-                                onChange={this.handleChange}
-                                multiline
-                                rows="10"
-                                fullWidth
-                                className={classes.textField}
-                                placeholder="Sadrzaj bloga ..." />
+                        <DialogContent>
+                            <form onSubmit={this.handleSubmit}>
+                                <TextField
+                                    name="title"
+                                    id="title"
+                                    label="Naslov"
+                                    value={this.state.title}
+                                    onChange={this.handleChange}
+                                    fullWidth
+                                    className={classes.textField}
+                                    placeholder="Naslov bloga" />
 
-                            <Button
-                                type="submit"
-                                variant="contained"
-                                color="primary"
-                                className={classes.submitButton}
-                            >
-                                +
+                                <TextField
+                                    name="body"
+                                    id="body"
+                                    label="Sadrzaj"
+                                    value={this.state.body}
+                                    onChange={this.handleChange}
+                                    multiline
+                                    rows="10"
+                                    fullWidth
+                                    className={classes.textField}
+                                    placeholder="Sadrzaj bloga ..." />
+
+                                <Button
+                                    type="submit"
+                                    variant="contained"
+                                    color="primary"
+                                    className={classes.submitButton}
+                                >
+                                    +
                             </Button>
-                        </form>
-                    </DialogContent>
-                </Dialog>
+                                <div className="image-wrapper">
+                                    <input
+                                        type='file'
+                                        id='imageInput'
+                                        hidden='hidden'
+                                        onChange={this.handleImageChange}
+                                    />
+                                    <MyButton tip='Dodaj sliku' onClick={this.handleEditPicture} btnClassName='buttons'>
+                                        <EditIcon />
+                                    </MyButton>
+                                </div>
+                            </form>
+                        </DialogContent>
+                    </Dialog> : null
+                }
             </Fragment>
         )
     }
 }
 
-
 PostBlog.propTypes = {
+    uploadImage: PropTypes.func.isRequired,
     postBlog: PropTypes.func.isRequired,
+    logoutUser: PropTypes.func.isRequired,
+    UI: PropTypes.object.isRequired,
+    user: PropTypes.object.isRequired,
+    data: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    UI: state.UI,
+    user: state.user,
+    data: state.data
+})
+
+const mapActionsToProps = {
+    postBlog,
+    logoutUser,
+    uploadImage
 }
 
-export default connect(null, { postBlog })(withStyles(styles)(PostBlog))
+
+export default connect(mapStateToProps, mapActionsToProps)(withStyles(styles)(PostBlog));

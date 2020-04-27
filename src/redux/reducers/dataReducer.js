@@ -25,10 +25,10 @@ export default function (state = initalState, action) {
                 loading: false,
                 news: action.payload
             };
-        // case DELETE_POST:
-        //     index = state.blogs.findIndex(blog => blog.newsId === action.payload.newsId);
-        //     state.blogs.splice(index, 1);
-        //     return { ...state }
+        case DELETE_POST:
+            const index = state.blogs.findIndex(blog => blog.newsId === action.payload.newsId);
+            state.news.splice(index, 1);
+            return { ...state }
         case POST_BLOG:
             return {
                 ...state,

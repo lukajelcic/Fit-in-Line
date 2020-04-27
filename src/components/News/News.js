@@ -25,8 +25,9 @@ class News extends Component {
     render() {
         const { loading, news } = this.props.data
         const { classes } = this.props
+
         let recentBlogs = !loading ? (
-            news.map(blog => <NewsCard key={blog.newsId} blog={blog} />)
+            news.map((blog) => <NewsCard key={blog.newsId} blog={blog} />)
         ) : <CircularProgress size={60} className={classes.progress} />
         return (
 
