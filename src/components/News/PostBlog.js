@@ -14,10 +14,17 @@ import { Button, Typography } from '@material-ui/core';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import EditIcon from '@material-ui/icons/Edit';
 
+
+//REDUX
 import { connect } from 'react-redux';
-import { postBlog, uploadImage } from '../../redux/actions/dataActions';
+import { postBlog } from '../../redux/actions/dataActions';
 import { logoutUser } from '../../redux/actions/userActions';
 
+
+//Firebase
+import firebase from 'firebase';
+import FileUploader from 'react-firebase-file-uploader';
+import config from '../../firebase';
 
 const styles = {
     textField: {
@@ -33,18 +40,24 @@ const styles = {
     },
     progressSpinner: {
         position: 'absolute'
+    },
+    fileuploader: {
+        float: 'right'
     }
 }
 
 
 class PostBlog extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             open: false,
+            image: '',
+            imageUrl: null,
             title: '',
             body: '',
-            errors: {}
+            errors: {},
+            progress: 0
         }
     }
 
@@ -70,40 +83,40 @@ class PostBlog extends Component {
         e.preventDefault();
         const newNews = {
             title: this.state.title,
-            body: this.state.body
+            body: this.state.body,
+            imageUrl: this.state.imageUrl
         }
         this.props.postBlog(newNews);
         this.setState({ open: false });
     }
 
-    handleUploadImage = (e) => {
-        const image = e.target.files[0];
-        const formData = new FormData();
-        formData.append('image', image, image.name)
-
-        this.props.uploadImage(formData);
+    handleUploadStart = () => {
+        this.setState({
+            progress: 0
+        })
     }
 
-    handleEditPicture = () => {
-        const fileInput = document.getElementById('imageInput')
-        fileInput.click();
-    }
-
-    handleLogout = () => {
-        this.props.logoutUser();
+    handleUploadSuccess = filename => {
+        this.setState({
+            imageUrl: filename,
+            progress: 100
+        })
+        firebase.storage().ref('news images').child(filename).getDownloadURL()
+            .then(url => {
+                this.setState({
+                    imageUrl: url,
+                    progress: 100
+                })
+            })
     }
 
     render() {
         const { errors } = this.state
-        const { classes, UI: { loading }, user: { authenticated }, data: { blog: { imageUrl } } } = this.props
+        const { classes, UI: { loading }, user: { authenticated } } = this.props
         return (
             <Fragment>
                 <MyButton tip="Postavi Blog" onClick={this.handleOpen}>
                     <AddIcon color="primary" />
-                </MyButton>
-
-                <MyButton tip='Odjavi se' onClick={this.handleLogout}>
-                    <ExitToAppIcon color='primary' />
                 </MyButton>
 
                 {authenticated ?
@@ -129,7 +142,8 @@ class PostBlog extends Component {
                                     onChange={this.handleChange}
                                     fullWidth
                                     className={classes.textField}
-                                    placeholder="Naslov bloga" />
+                                    placeholder="Naslov bloga"
+                                    required />
 
                                 <TextField
                                     name="body"
@@ -141,27 +155,29 @@ class PostBlog extends Component {
                                     rows="10"
                                     fullWidth
                                     className={classes.textField}
-                                    placeholder="Sadrzaj bloga ..." />
+                                    placeholder="Sadrzaj bloga ..."
+                                    required />
 
                                 <Button
                                     type="submit"
                                     variant="contained"
                                     color="primary"
                                     className={classes.submitButton}
+                                    disabled={!this.state.progress}
                                 >
-                                    +
+                                    Dodaj blog
                             </Button>
-                                <div className="image-wrapper">
-                                    <input
-                                        type='file'
-                                        id='imageInput'
-                                        hidden='hidden'
-                                        onChange={this.handleImageChange}
-                                    />
-                                    <MyButton tip='Dodaj sliku' onClick={this.handleEditPicture} btnClassName='buttons'>
-                                        <EditIcon />
-                                    </MyButton>
-                                </div>
+
+
+                                <FileUploader
+                                    className={classes.fileuploader}
+                                    accept="image/*"
+                                    name="imageUrl"
+                                    storageRef={firebase.storage().ref('news images')}
+                                    onUploadStart={this.handleUploadStart}
+                                    onUploadSuccess={this.handleUploadSuccess}
+                                    required
+                                />
                             </form>
                         </DialogContent>
                     </Dialog> : null
@@ -172,7 +188,6 @@ class PostBlog extends Component {
 }
 
 PostBlog.propTypes = {
-    uploadImage: PropTypes.func.isRequired,
     postBlog: PropTypes.func.isRequired,
     logoutUser: PropTypes.func.isRequired,
     UI: PropTypes.object.isRequired,
@@ -188,8 +203,7 @@ const mapStateToProps = (state) => ({
 
 const mapActionsToProps = {
     postBlog,
-    logoutUser,
-    uploadImage
+    logoutUser
 }
 
 

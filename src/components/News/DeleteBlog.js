@@ -16,11 +16,7 @@ import { deleteBlog } from '../../redux/actions/dataActions';
 
 
 const styles = {
-    deleteButton: {
-        left: '80%',
-        top: '50%',
-        position: 'relative'
-    }
+
 }
 
 class DeleteBlog extends Component {

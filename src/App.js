@@ -17,7 +17,9 @@ import PostBlog from './components/News/PostBlog';
 import AuthRoute from './util/AuthRoute';
 
 import { Provider } from 'react-redux';
+import { connect } from 'react-redux';
 import store from './redux/store';
+import dashboard from './pages/dashboard';
 
 
 
@@ -30,6 +32,7 @@ class App extends Component {
     this.setState({ navbarOpen: !this.state.navbarOpen })
   }
   render() {
+    const { user: { authenticated } } = this.props
     return (
       <Provider store={store}>
         <Router history={history}>
@@ -46,8 +49,12 @@ class App extends Component {
               <Route exact path='/training' component={Training} />
               <Route exact path='/about' component={About} />
               <Route exact path='/gallery' component={GalleryPage} />
+              <Route exact path='/dashboard' component={dashboard} />
             </Switch>
-            <Reserve />
+
+            {!authenticated ?
+              <Reserve /> : null}
+
 
             <div className="footer">
               <Footer />
@@ -60,4 +67,8 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  user: state.user
+})
+
+export default connect(mapStateToProps, null)(App);

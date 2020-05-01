@@ -5,7 +5,8 @@ import {
     DELETE_POST,
     SET_ERRORS,
     CLEAR_ERRORS,
-    LOADING_UI
+    LOADING_UI,
+    SET_POST
 } from '../types';
 
 
@@ -43,16 +44,6 @@ export const postBlog = (newBlog) => (dispatch) => {
                 type: SET_ERRORS,
                 payload: err.response.data
             })
-        })
-}
-
-export const uploadImage = (formData) => (dispatch) => {
-    axios.post('/news/newsId', formData)
-        .then(() => {
-            console.log('Successfully')
-        })
-        .catch(err => {
-            console.log(err)
         })
 }
 

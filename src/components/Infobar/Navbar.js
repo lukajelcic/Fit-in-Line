@@ -1,14 +1,18 @@
 import React from 'react'
 import styled from "styled-components";
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useSpring, animated, config } from "react-spring";
 import Brand from "./Brand";
-
-
 import BurgerMenu from "./Burgermenu";
 import CollapseMenu from "./CollapseMenu";
+import dashboard from '../../pages/dashboard';
+
+import { connect } from 'react-redux';
+import { useDispatch, useSelector } from "react-redux";
 
 const Navbar = (props) => {
+  const authenticated = useSelector(state => state.user.authenticated)
   const barAnimation = useSpring({
     from: { transform: 'translate3d(0, -10rem, 0)' },
     transform: 'translate3d(0, 0, 0)',
@@ -20,6 +24,7 @@ const Navbar = (props) => {
     delay: 800,
     config: config.wobbly,
   });
+
 
   return (
     <>
@@ -53,7 +58,15 @@ const Navbar = (props) => {
   )
 }
 
-export default Navbar
+// Navbar.proptypes = {
+//   user: PropTypes.object.isRequired
+// }
+
+const mapStateToProps = state => ({
+  user: state.user.authenticated
+})
+
+export default connect(mapStateToProps, null)(Navbar);
 
 const NavBar = styled(animated.nav)`
   position: relative;
