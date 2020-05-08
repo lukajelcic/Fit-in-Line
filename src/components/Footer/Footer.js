@@ -22,7 +22,7 @@ const Footer =()=>{
                         <hr />
                         <ul className="list-unstyled">
                             <li><PhoneIcon style={{marginRight:'5px',color:'#B3F2F8'}}/> +381 66 34 36 06</li>
-                            <li><MapIcon style={{marginRight:'5px',color:'#B3F2F8'}}/> Kragujevac,Srbija</li>
+                            <li><MapIcon style={{marginRight:'5px',color:'#B3F2F8'}}/> Kragujevac, Srbija</li>
                             <li><LocationOnIcon style={{marginRight:'5px',color:'#B3F2F8'}}/> Janka Veselinovica 35</li>
                             <li><MailIcon style={{marginRight:'5px',color:'#B3F2F8'}}/> tanja20nikolic@gmail.com</li>
                         </ul>

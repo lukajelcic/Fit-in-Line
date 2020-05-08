@@ -30,8 +30,8 @@ class TrainingTypeL extends Component {
         return (
             <div className="container p-1 content" key={this.props.item.id}>
                 <MyButton tip={expanded ? "Prikazi manje" : "Prikazi vise"} onClick={this.handleExpandClick}>
-                    {expanded ? <RemoveCircleOutlineIcon color="primary" fontSize="large"  btnClassName={classes.btn} /> : (
-                        <AddCircleOutlineIcon color="primary" fontSize="large" btnClassName={classes.btn} />)}
+                    {expanded ? <RemoveCircleOutlineIcon style={{color:'rgb(9, 83, 88)'}} fontSize="large" btnClassName={classes.btn} /> : (
+                        <AddCircleOutlineIcon style={{color:'#cf7303 '}} fontSize="large"  btnClassName={classes.btn} />)}
                 </MyButton>
                 <span className="title">{this.props.item.title}</span>
                 <div className={expanded ? "toggle-conent" : "hide-content"}>

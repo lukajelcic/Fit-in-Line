@@ -3,6 +3,7 @@ import withStyles, { withstyles } from '@material-ui/core/styles/withStyles';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import dayjs from 'dayjs';
 
 import ScheduleIcon from '@material-ui/icons/Schedule';
 
@@ -31,7 +32,7 @@ class NewsCard extends Component {
                         <div className="news-img">
                             <img style={{ width: 300, height: 200,borderRadius:'10px' }} src={imageUrl} alt="/"></img>
                         </div>
-                        <p style={{marginTop:'5px'}}><span><ScheduleIcon style={{marginRight:'5px',color:'rgb(9, 83, 88)'}} /></span>{createdAt}</p>
+                        <p style={{marginTop:'5px'}}><span><ScheduleIcon style={{marginRight:'5px',color:'rgb(9, 83, 88)'}} /></span>{dayjs(createdAt).format('MMMM D, YYYY')}</p>
                         <h3 className="entry-title">{title}</h3>
                     </Link>
                 </article>

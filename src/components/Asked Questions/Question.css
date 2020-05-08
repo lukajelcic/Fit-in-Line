@@ -11,13 +11,12 @@
 }
 
 .inner-text h2{
-    font-weight: 700;
+    font-weight: 500;
     font-size: 36px;
     line-height: 1.6em;
     letter-spacing: 1px;
-    color: black;
+    color: rgb(9, 83, 88);
 }
-
 .inner-text h3{
     color:#cf7303!important;
     font-size: 22px;

@@ -9,7 +9,7 @@ class HeadContent extends Component {
             <div className="main">
                 <div className="heading">
                         <h1><span>FIT IN LINE GALERIJA</span></h1>
-                        <h2>janka veselinovica 60, Kragujevac</h2>
+                        <h2>janka veselinovica 35, Kragujevac</h2>
                 </div>
             </div>
         );
