@@ -19,7 +19,7 @@ const styles = {
 
 class TrainingTypeR extends Component {
     state = {
-        expanded: false
+        expanded: true
     }
 
     handleExpandClick = () => {

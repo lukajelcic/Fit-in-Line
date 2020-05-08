@@ -1,7 +1,7 @@
 .reserve{
     padding: 30px 0;
-    background: rgb(9, 83, 88);
-    border-bottom: 2px solid orange;
+    background-color: rgb(9, 83, 88,0.8);
+    border-bottom: 2px solid #cf7303!important;
 }
 .reserve-wrap{
     width: 100%;
@@ -12,7 +12,7 @@
 }
 
 .reserve-title{
-    color: #fff;
+    color: white;
     margin-bottom: 10px;
     margin-left:40px;
     letter-spacing: 1px;

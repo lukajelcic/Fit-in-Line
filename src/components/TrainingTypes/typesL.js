@@ -4,7 +4,12 @@ const types = [
         title: "Fit In 50st, 60st, 70st",
         url: "https://fitnesstogether.com/files/frontend/cropped/ftbanner11.jpg",
         text: "Ne postoje godine  u kojima je kontraindikovano vežbanje. Samo je potrebno vežbu i trening prilagoditi godinama i zdravstvenom statusu. Zato je potrebno da imate svog trenera i da trening bude isplaniran i sproveden tako da što duže održi vitalnost vašeg organizma, njegovu funkcionalnost i dobro fizičko stanje. Uz prave vežbe i odgovarajući  trening možete zaustaviti proces starenja i poboljšati svoje zdravlje.",
-        footTxt: "Dođite da vežbamo zajedno!"
+        trng_h2:"Vezbanjem cete postici",
+        li1: "održati psihičko i fizičko zdravlje",
+        li2: "poboljštati raspoloženje",
+        li3: "umanjiti rizik od raznih bolesti",
+        li4: "usporiti proces starenja",
+        li5: "sačuvati vitalnost vašeg organizma",
     },
     {
         id: "2",
@@ -21,7 +26,6 @@ const types = [
         li7: "opušta i umanjuje stres podstičući lučenje hormona sreće",
         li8: "pomaže u borbi protiv osteoporoze i povećava gustinu mišićne mase",
         li9: "smanjuje rizik od povreda i ubrzava oporavak",
-        footTxt: "Vaše je samo da zakažete trening i isprobate ovu čudesnu spravu, a mi ćemo vam pomoći da iz treninga izvučete maksimum. ",
     }
 ];
 

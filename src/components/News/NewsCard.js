@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
+import ScheduleIcon from '@material-ui/icons/Schedule';
+
 
 const styles = {
 
@@ -29,7 +31,7 @@ class NewsCard extends Component {
                         <div className="news-img">
                             <img style={{ width: 300, height: 200,borderRadius:'10px' }} src={imageUrl} alt="/"></img>
                         </div>
-                        <small ><span><i id="clock" className="fa fa-clock-o" style={{ color: '#cf7303' }} /></span>{createdAt}</small>
+                        <p style={{marginTop:'5px'}}><span><ScheduleIcon style={{marginRight:'5px',color:'rgb(9, 83, 88)'}} /></span>{createdAt}</p>
                         <h3 className="entry-title">{title}</h3>
                     </Link>
                 </article>

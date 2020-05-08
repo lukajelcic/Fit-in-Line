@@ -149,9 +149,8 @@
     margin-top: 20px;
 }
 
-.news-card small {
+.news-card p {
     color: black;
-    margin-left: -10px;
 }
 
 @media(max-width:1200px){

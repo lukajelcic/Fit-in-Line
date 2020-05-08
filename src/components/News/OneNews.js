@@ -6,6 +6,8 @@ import Counter from '../About/Counter';
 import Grid from '@material-ui/core/Grid';
 import './News.css';
 
+import ScheduleIcon from '@material-ui/icons/Schedule';
+
 const styles = {}
 
 class OneNews extends Component {
@@ -26,8 +28,8 @@ class OneNews extends Component {
                     <div className="container-fluid background"></div>
                     <div className="page-content" style={{ width: '70%' }}>
                         <div className="ntr-text" >
-                            <h1 style={{ marginLeft: '15px' }}>{title}</h1>
-                            <small ><span><i id="clock" className="fa fa-clock-o" style={{ color: '#cf7303' }} /></span>{createdAt}</small>
+                            <h1>{title}</h1>
+                            <p><span><ScheduleIcon style={{marginRight:'5px',color:'rgb(9, 83, 88)'}} /></span>{createdAt}</p>
                             <br />
                             <br />
                             <Counter />

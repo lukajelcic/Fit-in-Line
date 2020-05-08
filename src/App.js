@@ -53,9 +53,9 @@ class App extends Component {
               <Route exact path='/' component={HomePage} />
               <Route exact path='*' component={HomePage} />
             </Switch>
-
+{/* 
             {!authenticated ?
-              <Reserve /> : null}
+              <Reserve /> : null} */}
 
 
             <div className="footer">

@@ -4,6 +4,8 @@ import badge2 from '../../images/badge2.png'
 import badge3 from '../../images/badge3.png'
 import badge4 from '../../images/badge4.png'
 
+import { Link } from 'react-router-dom';
+
 
 import './MainContent.css'
 
@@ -12,10 +14,9 @@ class MainContent extends Component {
         return (
             <div className="main-content">
                 <div className="text">
-                    <h2>What is Fitness and Nutrition Coaching? <span>Is it Right for Me?</span></h2><br></br>
-                    <p>We want to take out all the misconception surrounding fitness and nutrition and to provide a sustainable and practical approach to your goals.</p>
-                    <p>We will provide you with the tools and education to empower yourself to reach and maintain these goals long term.</p>
-                    <p>We assist male and females either new to training or leading stressful and hectic lifestyles, lose fat and tone their bodies while improving the overall health and fitness and increasing their energy levels.</p>
+                    <h2>Dobrodošli u fitnes studio <span style={{color:'#cf7303'}}>FitInLine!</span></h2><br></br>
+                    <p>Uz individualne trendinge i izbalansiranu ishranu možete dovesti vaše telo u željeno stanje, a mi smo tu da vam pomognemo. </p>
+                    <p>Na stranici <span><Link style={{textDecoration:'none'}} to='/programs'>PROGRAMI</Link></span> možete videti različite programe i vrste treninga koje smo pripremili za vas. Na vama je da izaberete i zakažete svoj probni trening ili razgovor. Čekamo vas!</p>
                 </div>
                 <div className="badges">
                     <img src={badge1} alt=""></img>

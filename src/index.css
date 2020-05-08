@@ -19,18 +19,6 @@ body {
   padding-left: 0px;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../src/images/footer.png),
-    radial-gradient(circle at center, #f9f9f4 80%, #ffffff 100%) !important;
-  height: 500px;
-  width: 100%;
-  background-color: #f9f9f4 !important;
-}
-
 :root {
   --header-green: rgb(9, 83, 88);
   --title1-green: rgb(17, 143, 12);
