@@ -139,6 +139,21 @@
     display: inline;
 }
 
+.blog_image img{
+    width: 900px;
+    height: 350px;
+    object-fit: cover;
+    transform: skewX(-5deg);
+}
+.blog_text{
+    margin-top: 20px;
+}
+
+.news-card small {
+    color: black;
+    margin-left: -10px;
+}
+
 @media(max-width:1200px){
     .news-main-image{
         width: 300px;
@@ -181,5 +196,10 @@
         width: 50%;
         text-align: center;
         margin-left: 25%;
+    }
+    .blog_image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

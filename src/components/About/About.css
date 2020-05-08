@@ -109,12 +109,12 @@
   color: black !important;
   font-weight: 400;
   font-size: 1.4em;
-  margin-left: 50px;
+  margin-left: 15px;
 }
 
 .counter {
+  display: flex;
   width: 100%;
-  clear: both;
 }
 
 .counter p {
@@ -140,9 +140,8 @@
   width: 100%;
 }
 
-.icons-div {
-  display: flex;
-  align-items: center;
+.icons-div{
+  margin-top: 15px;
 }
 
 .fa {

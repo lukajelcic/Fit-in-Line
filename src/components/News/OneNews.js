@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { getOnePost } from '../../redux/actions/dataActions';
 import { withStyles } from '@material-ui/core';
+import Counter from '../About/Counter';
+import Grid from '@material-ui/core/Grid';
+import './News.css';
 
 const styles = {}
 
@@ -14,29 +17,31 @@ class OneNews extends Component {
         this.props.getOnePost(id)
     }
     render() {
-        const { data: { blog: { title, body, imageUrl } } } = this.props
-
-        const blog = this.state.blog ? (
-            <div className="blog">
-                <h4>{title}</h4>
-                <h4>{body}</h4>
-                <img src={imageUrl} />
-            </div>
-        ) : (
-                <div className="center">Loading ...</div>
-            )
+        const { data: { blog: { title, body, imageUrl, createdAt } } } = this.props
 
         return (
-            <main className="page-head" style={{ width: '100%', margin: '0', position: 'static' }}>
-                <div className="container-fluid background"></div>
-                <div className="page-content">
-                    <div className="ntr-text">
-                        <h1 className="ntr-title">{title}</h1>
-                        <p style={{ position: 'relative' }}>{body}</p>
+            <Grid container xs={12}>
+                <main className="page-head" style={{ width: '100%', margin: '0', position: 'static' }}>
+                    <div className="about-head"></div>
+                    <div className="container-fluid background"></div>
+                    <div className="page-content" style={{ width: '70%' }}>
+                        <div className="ntr-text" >
+                            <h1 style={{ marginLeft: '15px' }}>{title}</h1>
+                            <small ><span><i id="clock" className="fa fa-clock-o" style={{ color: '#cf7303' }} /></span>{createdAt}</small>
+                            <br />
+                            <br />
+                            <Counter />
+                            <hr style={{ marginTop: '-15px' }} />
+                            <div className="blog_image">
+                                <img src={imageUrl} className="img-responsive post_img" alt="post image" />
+                            </div>
+                            <div className="blog_text">
+                                <p>{body}</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-            </main>
+                </main>
+            </Grid>
         )
     }
 }

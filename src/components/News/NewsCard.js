@@ -15,7 +15,8 @@ class NewsCard extends Component {
                 newsId,
                 body,
                 title,
-                imageUrl
+                imageUrl,
+                createdAt
             },
             user: {
                 authenticated,
@@ -26,8 +27,9 @@ class NewsCard extends Component {
                 <article className="news-card" key={newsId}>
                     <Link to={'/news/' + newsId} style={{textDecoration:'none'}}>
                         <div className="news-img">
-                            <img style={{ width: 300, height: 200 }} src={imageUrl} alt="/"></img>
+                            <img style={{ width: 300, height: 200,borderRadius:'10px' }} src={imageUrl} alt="/"></img>
                         </div>
+                        <small ><span><i id="clock" className="fa fa-clock-o" style={{ color: '#cf7303' }} /></span>{createdAt}</small>
                         <h3 className="entry-title">{title}</h3>
                     </Link>
                 </article>
