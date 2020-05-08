@@ -29,6 +29,17 @@ export const getNews = () => dispatch => {
         })
 }
 
+export const getOnePost = (newsId) =>(dispatch)=>{
+    dispatch({type:LOADING_UI})
+    axios.get(`/news/${newsId}`)
+    .then(res =>{
+        dispatch({
+            type:SET_POST,
+            payload:res.data
+        })
+    })
+}
+
 export const postBlog = (newBlog) => (dispatch) => {
     dispatch({ type: LOADING_UI })
     axios.post('/news', newBlog)
@@ -55,4 +66,13 @@ export const deleteBlog = (newsId) => (dispatch) => {
         .catch(err => {
             console.log(err);
         })
+}
+
+export const editBlog = (blogDetails) => (dispatch) => {
+    dispatch({ type: LOADING_UI })
+    axios.post('/news', blogDetails)
+        .then(() => {
+            dispatch(getNews())
+        })
+        .catch(err => console.log(err))
 }

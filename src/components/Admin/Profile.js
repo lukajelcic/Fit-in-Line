@@ -71,21 +71,7 @@ class Profile extends Component {
         let profileMarkup = authenticated ? (
             <Paper>
                 <div className={classes.profile}>
-                    <div className="image-wrapper">
-                        <img src="" alt="profile picture" className="profile-image"></img>
-                        <input
-                            type='file'
-                            id='imageInput'
-                            hidden='hidden'
-                            onChange={this.handleImageChange}
-                        />
-                        <Typography variant="h3" color="primary"> {handle}</Typography>
-
-                    </div>
-                    <MyButton tip='Edit profile picture' onClick={this.handleEditPicture} btnClassName='buttons'>
-                        <EditIcon />
-                    </MyButton>
-                    <MyButton tip='Logout' onClick={this.handleLogout}>
+                    <MyButton tip='Izloguj se' onClick={this.handleLogout}>
                         <ExitToAppIcon color='primary' />
                     </MyButton>
 

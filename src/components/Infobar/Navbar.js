@@ -34,7 +34,7 @@ const Navbar = (props) => {
           <NavLinks style={linkAnimation}>
             <li><Link to="/about">O Nama</Link></li>
             <li><Link to="/nutrition">Ishrana</Link></li>
-            <li><Link to="/training">Treninzi</Link></li>
+            <li><Link to="/programs">Programi</Link></li>
             <li><Link to="/news">Vesti</Link></li>
             <li><Link to="/gallery">Galerija</Link></li>
           </NavLinks>

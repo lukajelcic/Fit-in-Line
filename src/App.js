@@ -8,18 +8,18 @@ import './components/TrainingTypes/TrainingType.css';
 import About from './components/About/About';
 import Reserve from './components/Reserve/Reserve';
 import News from './components/News/News';
-import ScrollButton from './components/Buttons/ScrollButton';
 import GalleryPage from './components/Gallery/GalleryPage';
 import Navbar from './components/Infobar/Navbar';
 import NutritionPage from './components/Nutrition/NutritionPage';
 import login from './pages/login';
-import PostBlog from './components/News/PostBlog';
 import AuthRoute from './util/AuthRoute';
+import OneNews from './components/News/OneNews'
 
 import { Provider } from 'react-redux';
 import { connect } from 'react-redux';
 import store from './redux/store';
 import dashboard from './pages/dashboard';
+import TrainingDetails from './components/TrainingsPage/TrainingDetails';
 
 
 
@@ -39,17 +39,19 @@ class App extends Component {
           <Navbar navbarState={this.state.navbarOpen}
             handleNavbar={this.handleNavbar} />
           <div className="App">
-            <ScrollButton />
+            {/* <ScrollButton /> */}
             <Switch>
-              <Route exact path='/' component={HomePage} />
-              <AuthRoute exact path='/login' component={login} />
-              <AuthRoute exact path='/fit-blog' component={PostBlog} />
+              <AuthRoute exact path='/login' component={login} authenticated={authenticated} />
               <Route exact path='/nutrition' component={NutritionPage} />
               <Route exact path='/news' component={News} />
-              <Route exact path='/training' component={Training} />
+              <Route exact path='/news/:newsId' component={OneNews} />
+              <Route exact path='/programs' component={Training} />
+              <Route exact path='/programs/:id/:title' component={TrainingDetails} />
               <Route exact path='/about' component={About} />
               <Route exact path='/gallery' component={GalleryPage} />
               <Route exact path='/dashboard' component={dashboard} />
+              <Route exact path='/' component={HomePage} />
+              <Route exact path='*' component={HomePage} />
             </Switch>
 
             {!authenticated ?

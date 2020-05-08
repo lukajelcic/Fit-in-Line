@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import DeleteBlog from '../News/DeleteBlog';
+import Edit from './Edit';
 import MyButton from '../../util/MyButton';
 
 import Card from '@material-ui/core/Card';
@@ -16,10 +17,11 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
     root: {
-        maxHeight: 345
+        maxHeight: 'auto',
+        marginTop: '30px'
     },
     media: {
-        height: 140
+        height: 150
     }
 }
 class Cards extends Component {
@@ -42,7 +44,7 @@ class Cards extends Component {
 
                 <CardActions>
                     {deleteButton}
-                    <Button size="small" color="primary">Izmeni</Button>
+                    <Edit />
                 </CardActions>
             </Card>
         )

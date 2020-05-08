@@ -18,9 +18,9 @@ const CollapseMenu = (props) => {
             >
                 <NavLinks>
                     <li><Link to="/about" onClick={props.handleNavbar}>O Nama</Link></li>
+                    <li><a href="/nutrition" onClick={props.handleNavbar}>Ishrana</a></li>
+                    <li><Link to="/programs" onClick={props.handleNavbar}>Programi</Link></li>
                     <li><Link to="/news" onClick={props.handleNavbar}>Vesti</Link></li>
-                    <li><a href="/" onClick={props.handleNavbar}>Ishrana</a></li>
-                    <li><Link to="/training" onClick={props.handleNavbar}>Treninzi</Link></li>
                     <li><Link to="/gallery" onClick={props.handleNavbar}>Galerija</Link></li>
                 </NavLinks>
             </CollapseWrapper>

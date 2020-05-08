@@ -5,7 +5,7 @@
 }
 
 .trn-head {
-  height: 300px;
+  height: 400px;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -41,6 +41,7 @@
   font-size: 36px;
   text-transform: uppercase;
   font-weight: 400;
+  margin-bottom: 80px;
 }
 
 .types-title span {
@@ -83,6 +84,16 @@
   transition: 1s;
 }
 
+.content .img{
+  object-fit: cover;
+  height: 140px;
+}
+
+.content .title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
 @media (max-width: 1000px) {
   .training-article .page-head header {
     width: 100%;

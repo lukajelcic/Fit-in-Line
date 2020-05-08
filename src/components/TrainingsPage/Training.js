@@ -1,31 +1,19 @@
 import React, { Component } from 'react';
 
-import TrainingType from '../TrainingTypes/TrainingType';
-import types from '../TrainingTypes/types';
-
 import '../TrainingTypes/TrainingType.css';
 import TrainingHead from './TrainingHead';
 import TrainingContent from './TrainingContent';
+import Program from './Program'
 
 class Training extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            trainingTypes: types
-        }
-    }
+
     render() {
-        const typeItems = this.state.trainingTypes.map(item => <TrainingType key={item.id} item={item} />)
+
         return (
             <main className="page-head" style={{ width: '100%', margin: '0', position: 'static' }}>
                 <div className="background"></div>
                 <TrainingHead />
-                <h3 className="types-title">Sve vrste <span>treninga </span></h3>
-                <div className="training-wrapper">
-                    <div className="main-training">
-                        {typeItems}
-                    </div>
-                </div>
+                <Program />
                 <hr style={{ width: '90%' }}></hr>
                 <TrainingContent
                     h1="Treninzi za svakog"
@@ -46,8 +34,6 @@ class Training extends Component {
                     c6="Redovna fizička aktivnost može vam pomoći da lakše zaspite i da kvalitetnije spavate. Vreme treninga je potrebno prilagoditi svojim navikama i izbegavati trening blizu vremena za spavanje."
                     c7="Vežba i fizička aktivnost mogu biti prijatni. Tako i treba da birate aktivnosti kojima će te se baviti. Od tipa treninga, atmosfere, trenera… To vam daje priliku da se opustite, uživate, budete zadovoljni i srećni."
                 />
-
-
             </main>
         )
     }

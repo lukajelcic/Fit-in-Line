@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import NewsCard from './NewsCard';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+
 
 import './News.css';
 
@@ -10,7 +13,8 @@ import { getNews } from '../../redux/actions/dataActions';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import withStyles from '@material-ui/core/styles/withStyles';
 
-const styles = {}
+const styles = {
+}
 
 class News extends Component {
     constructor() {
@@ -30,20 +34,23 @@ class News extends Component {
             news.map((blog) => <NewsCard key={blog.newsId} blog={blog} />)
         ) : <CircularProgress size={60} className={classes.progress} />
         return (
-
             <main className="news-page">
                 <div className="background"></div>
                 <article className="news-article">
                     <div className="page-head">
-                        <div className="news-main-image">
-                            <div className="slider-box" id="news-sld">
-                                <h1 className="slider-title">
-                                    Budite u toku sa najnovijim vestima
+                        <div className="row justify-content-center">
+                            <div className="col-10">
+                                <div className="news-main-image">
+                                    <div className="col-md-6 col-sm-12 col-lg-6 mt-2 slider-box" id="news-sld">
+                                        <h1 className="slider-title">
+                                            Budite u toku sa najnovijim vestima
                             </h1>
-                                <p className="slider-txt">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                        <p className="slider-txt">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                             </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

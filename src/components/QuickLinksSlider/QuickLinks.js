@@ -29,12 +29,6 @@ class QuickLinks extends React.Component {
                             content="Individualni plan ishrane na osnovu merenja i vaših ciljeva! Više informacija  click na link"
                         />
                     </div>
-                    <div className="imagecon">
-                        <SliderBox
-                            title="Janko"
-                            content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-                        />
-                    </div>
                 </div>
 
             </div>
