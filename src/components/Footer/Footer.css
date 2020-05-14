@@ -15,5 +15,18 @@
 }
 
 .main-footer small {
-    color: #B3F2F8;;
+    color: #B3F2F8;
+}
+
+.main-footer h4{
+    font-weight: 400;
+}
+
+.links ul li {
+    padding:3px;
+}
+
+.links ul li:hover{
+    border-left: 5px solid #B3F2F8;
+    transform: skewX(-3deg);
 }

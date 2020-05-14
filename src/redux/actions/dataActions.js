@@ -68,11 +68,12 @@ export const deleteBlog = (newsId) => (dispatch) => {
         })
 }
 
-export const editBlog = (blogDetails) => (dispatch) => {
-    dispatch({ type: LOADING_UI })
-    axios.post('/news', blogDetails)
-        .then(() => {
-            dispatch(getNews())
-        })
-        .catch(err => console.log(err))
+export const editBlog = (blogDetails)=>(dispatch)=>{
+    axios.put(`/news/:newsId`,blogDetails)
+    .then(()=>{
+        dispatch(getNews())
+    })
+    .catch(err=>{
+        console.log(err)
+    })
 }

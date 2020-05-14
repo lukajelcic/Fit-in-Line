@@ -21,10 +21,6 @@ function About(props) {
                 text8="Mi smo tu zbog vas!"
             />
             <hr />
-
-            <p className="cta-text">Ne držite nas samo za sebe, šerujte!</p>
-
-            <Counter />
         </main>
     )
 }

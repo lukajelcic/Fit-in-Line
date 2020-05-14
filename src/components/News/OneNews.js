@@ -23,13 +23,12 @@ class OneNews extends Component {
         const { data: { blog: { title, body, imageUrl, createdAt } } } = this.props
 
         return (
-            <Grid container xs={12}>
+            <Grid container>
                 <main className="page-head" style={{ width: '100%', margin: '0', position: 'static' }}>
-                    <div className="about-head"></div>
                     <div className="container-fluid background"></div>
                     <div className="page-content" style={{ width: '70%' }}>
                         <div className="ntr-text" >
-                            <h1>{title}</h1>
+                            <h1 style={{fontWeight:'500'}}>{title}</h1>
                             <p style={{marginBottom:'-20px'}}><span><ScheduleIcon style={{marginRight:'5px',color:'rgb(9, 83, 88)'}} /></span>{dayjs(createdAt).format('MMMM D, YYYY')}</p>
                             <br />
                             <br />

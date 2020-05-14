@@ -3,7 +3,8 @@ import {
     SET_POST,
     POST_BLOG,
     LOADING_DATA,
-    DELETE_POST
+    DELETE_POST,
+    EDIT_POST
 } from '../types';
 
 const initalState = {

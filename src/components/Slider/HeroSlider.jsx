@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { Link } from 'react-router-dom';
 
 import 'swiper/css/swiper.css';
 import Swiper from 'react-id-swiper';
@@ -44,7 +45,7 @@ const HeroSlider = ()=>{
             </div>
             <div className="col-md-4 offset-md-1 my-auto text-left text-white content">
                 <h1 className="text-uppercase mb-4 font-weight-bold">Fit Plate</h1>
-                <p className="mb-1 justify">Dinamičan tip treninga za samo 30 minuta! Kombinacija vežbi, istezanja i masaže uz vibraciju. Više informacija click na link</p>
+                <p className="mb-1 justify">Dinamičan tip treninga za samo 30 minuta! Kombinacija vežbi, istezanja i masaže uz vibraciju. Više informacija <Link style={{textDecoration:'none'}} to="/programs/2"> na klik...</Link></p>
             </div>
         </div>
         {/* 2 */}
@@ -58,7 +59,7 @@ const HeroSlider = ()=>{
 
             <div className="col-md-4 offset-md-1 my-auto text-left text-white content">
                 <h1 className="text-uppercase mb-4 font-weight-bold">Fit Fast</h1>
-                <p className="mb-1 justify">Dovedite svoje telo u vrhunsku formu za tri meseca uz redovnu fizičku aktivnost i izbalansiranu ishranu. Tromesečni paket treninga i plana ishrane koji će vam pomoći da ostvarite željeni cilj . Više informacija možete dobiti pozivom na broj  br.telefona</p>
+                <p className="mb-1 justify">Dovedite svoje telo u vrhunsku formu za tri meseca uz redovnu fizičku aktivnost i izbalansiranu ishranu. Tromesečni paket treninga i plana ishrane koji će vam pomoći da ostvarite željeni cilj . Više informacija <Link style={{textDecoration:'none'}} to="/programs/4"> na klik...</Link></p>
             </div>
         </div>
                 {/* 3 */}
@@ -71,7 +72,7 @@ const HeroSlider = ()=>{
             </div>
             <div className="col-md-4 offset-md-1 my-auto text-left text-white content">
                 <h1 className="text-uppercase mb-4 font-weight-bold">Fit Eat</h1>
-                <p className="mb-1 justify">Individualni plan ishrane na osnovu merenja i vaših ciljeva! Više informacija  click na link</p>
+                <p className="mb-1 justify">Individualni plan ishrane na osnovu merenja i vaših ciljeva! Više informacija <Link style={{textDecoration:'none'}} to="/nutrition"> na klik...</Link></p>
             </div>
         </div>
     </Swiper>

@@ -28,6 +28,7 @@ class Cards extends Component {
     render() {
         const { classes } = this.props
         const { blog: { newsId, title, body, imageUrl }, user: { authenticated } } = this.props
+        const editButton = authenticated ?(<Edit newsId={newsId}>Izmeni</Edit>) : null
         const deleteButton = authenticated ? (<DeleteBlog newsId={newsId}>Izbrisi</DeleteBlog>
         ) : null
         return (
@@ -44,7 +45,7 @@ class Cards extends Component {
 
                 <CardActions>
                     {deleteButton}
-                    <Edit />
+                    {editButton}
                 </CardActions>
             </Card>
         )

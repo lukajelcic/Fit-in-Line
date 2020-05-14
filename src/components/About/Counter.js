@@ -4,7 +4,7 @@ function Counter() {
     return (
         <div className="counter">
             <p>
-                <strong>0</strong>
+                <strong style={{fontSize:'40px'}}>0</strong>
                 <i>puta podeljeno</i>
             </p>
             <div className="icons-div">

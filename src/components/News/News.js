@@ -45,9 +45,8 @@ class News extends Component {
                                         <h1 className="slider-title">
                                             Budite u toku sa najnovijim vestima
                             </h1>
-                                        <p className="slider-txt">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                        <p className="slider-txt" style={{fontSize:'18px',color:'rgb(68, 71, 76)'}}>
+                                            Pratite nas ukoliko želite da budete redovno informisani o novostima koji se tiču fitness zajednice Fit in Line.
                             </p>
                                     </div>
                                 </div>
@@ -56,12 +55,13 @@ class News extends Component {
                     </div>
                 </article>
 
-                <h2 className="news-title">Aktuelne Vesti</h2>
+                <h2 className="news-title" style={{ fontWeight: '500' }}>Aktuelne Vesti</h2>
                 <hr className="hr-title" style={{ width: '300px', border: '1px solid lightgray' }}></hr>
 
                 <div className="news-wrapper">
                     <div className="main-news">
                         {recentBlogs}
+                        
                     </div>
                 </div>
             </main>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css'
 import { Link } from 'react-router-dom';
+import logo from '../../images/logo.png'
 
 
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -15,7 +16,7 @@ const Footer =()=>{
             <div className="container-fluid">
                 <div className="row">
                     <div className="col">
-                        <span>LOGO</span>
+                        <span><img src={logo} /></span>
                     </div>
                     <div className="col">
                         <h4>Fit In Line</h4>
@@ -27,7 +28,7 @@ const Footer =()=>{
                             <li><MailIcon style={{marginRight:'5px',color:'#B3F2F8'}}/> tanja20nikolic@gmail.com</li>
                         </ul>
                     </div>
-                    <div className="col">
+                    <div className="col links">
                         <h4>Linkovi</h4>
                         <hr />
                         <ul className="list-unstyled">
@@ -50,7 +51,7 @@ const Footer =()=>{
                 <hr />
                 <div className="row">
                     <p className="col-sm">
-                        &copy;{new Date().getFullYear()} FIT IN LINE | All right reserved | Privacy
+                        &copy;{new Date().getFullYear()} FIT IN LINE | All right reserved
                     </p>
                 </div>
             </div>

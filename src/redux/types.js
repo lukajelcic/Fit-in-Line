@@ -14,7 +14,6 @@ export const LOADING_DATA = 'LOADING_DATA';
 //Data reducer types
 export const SET_POST = 'SET_POST';
 export const SET_POSTS = 'SET_POSTS';
-export const LIKE_POST = 'LIKE_POST';
-export const UNLIKE_POST = 'UNLIKE_POST';
 export const DELETE_POST = 'DELETE_POST';
 export const POST_BLOG = 'POST_BLOG';
+export const EDIT_POST = 'EDIT_POST';

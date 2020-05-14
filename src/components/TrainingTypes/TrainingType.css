@@ -16,10 +16,35 @@
       rgb(241, 245, 249, 0.2) 100%,
       #ffffff 0%
     ),
-    url("../../images/training-main.jpeg");
+    url("../../images/programs_head.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid #cf7303;
+}
+
+.details-head {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    180deg,
+    rgb(241, 245, 249, 0.2) 100%,
+    #ffffff 0%
+  ),
+  url("../../images/trn_details_head.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid #cf7303;
+  height: 400px;
+  width: 100%;
+}
+
+.details-head h3{
+  font-size: 50px;
+  color: rgb(9, 83, 88);
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
 }
 
 .trn-title {
@@ -32,8 +57,18 @@
   color: rgb(9, 83, 88);
 }
 
+.trn-text h4{
+  color: rgb(9, 83, 88);
+}
+
 .trn-text {
   width: 75%;
+}
+
+.type{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto;
 }
 
 .types-title {
@@ -46,7 +81,7 @@
 
 .types-title span {
   font-weight: bold;
-  color: orange;
+  color: #cf7303;
 }
 
 .training-page {
@@ -85,8 +120,9 @@
 }
 
 .content .img{
+  border: 0;
+  height: 150px;
   object-fit: cover;
-  height: 140px;
 }
 
 .content .title {
@@ -94,6 +130,33 @@
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
+
+.trn-text p {
+  width: 90%;
+  font-size: 17px;
+  line-height: 1.9rem;
+}
+
+.trn_list ul li{
+  margin: 5px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.trn_list ul li:hover{
+  border-left: 7px solid #cf7303;
+  cursor: pointer;
+  transform: skewX(-5deg);
+}
+
+.foot_text h6{
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  font-weight: 700;
+  text-align: justify;
+  width: 90%;
+  font-size: 18px;
+}
+
 @media (max-width: 1000px) {
   .training-article .page-head header {
     width: 100%;

@@ -16,7 +16,8 @@ import EditIcon from '@material-ui/icons/Edit';
 
 //Redux
 import { connect } from 'react-redux';
-import { editBlog } from '../../redux/actions/dataActions';
+import { editBlog, getOnePost } from '../../redux/actions/dataActions';
+import Axios from 'axios';
 
 const styles = {
     textField: {
@@ -27,51 +28,50 @@ const styles = {
     }
 }
 
+
 class Edit extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
+            newsId:'',
             title: '',
             body: '',
-            open: false
+            open: false,
         }
     }
     mapBlogDetailsToState = (blog) => {
         this.setState({
+            newsId:blog.newsId ? blog.newsId : '',
             title: blog.title ? blog.title : '',
-            body: blog.body ? blog.body : '',
+            body: blog.body ? blog.body : ''
         })
     }
 
-    componentDidMount() {
-        const { blog } = this.props
-        this.mapBlogDetailsToState(blog)
+    componentWillMount(){
+        this.props.getOnePost(this.props.newsId)
     }
 
     handleOpen = () => {
         this.setState({ open: true })
         this.mapBlogDetailsToState(this.props.blog)
+        console.log(this.props.blog)
     }
-
     handleClose = () => {
         this.setState({ open: false })
-    }
-
-    handleChange = (event) => {
         this.setState({
-            [event.target.name]: event.target.value
+            newsId:'',
+            title : '',
+            body: ''
         })
     }
 
-    handleSubmit = (e) => {
-        e.preventDefault()
-        const blogDetails = {
-            title: this.state.title,
-            body: this.state.body
-        }
-        this.props.editBlog(blogDetails)
-        this.handleClose()
+    handleChange = (e) =>{
+        e.preventDefault();
+        this.setState({
+            [e.target.name]:e.target.value
+        })
     }
+
     render() {
         const { classes } = this.props
         return (
@@ -85,7 +85,7 @@ class Edit extends Component {
                     fullWidth
                     maxWidth='sm'
                 >
-                    <DialogTitle>Edit your details</DialogTitle>
+                    <DialogTitle>Izmeni Blog</DialogTitle>
                     <DialogContent>
                         <form>
                             <TextField
@@ -125,11 +125,18 @@ class Edit extends Component {
 
 Edit.propTypes = {
     editBlog: PropTypes.func.isRequired,
-    classes: PropTypes.object.isRequired
+    classes: PropTypes.object.isRequired,
+    blog: PropTypes.object.isRequired,
+    newsId: PropTypes.string.isRequired,
 }
 
 const mapStateToProps = state => ({
     blog: state.data.blog,
 })
 
-export default connect(mapStateToProps, { editBlog })(withStyles(styles)(Edit))
+const mapActionsToProps = {
+    editBlog,
+    getOnePost
+}
+
+export default connect(mapStateToProps, mapActionsToProps)(withStyles(styles)(Edit))

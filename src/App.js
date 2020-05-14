@@ -20,6 +20,7 @@ import { connect } from 'react-redux';
 import store from './redux/store';
 import dashboard from './pages/dashboard';
 import TrainingDetails from './components/TrainingsPage/TrainingDetails';
+import Edit from './components/Admin/Edit';
 
 
 
@@ -45,17 +46,15 @@ class App extends Component {
               <Route exact path='/nutrition' component={NutritionPage} />
               <Route exact path='/news' component={News} />
               <Route exact path='/news/:newsId' component={OneNews} />
+              <Route exact path='/news/:newsId' component={Edit} />
               <Route exact path='/programs' component={Training} />
-              <Route exact path='/programs/:id/:title' component={TrainingDetails} />
+              <Route exact path='/programs/:id' component={TrainingDetails} />
               <Route exact path='/about' component={About} />
               <Route exact path='/gallery' component={GalleryPage} />
               <Route exact path='/dashboard' component={dashboard} />
               <Route exact path='/' component={HomePage} />
               <Route exact path='*' component={HomePage} />
             </Switch>
-{/* 
-            {!authenticated ?
-              <Reserve /> : null} */}
 
 
             <div className="footer">
