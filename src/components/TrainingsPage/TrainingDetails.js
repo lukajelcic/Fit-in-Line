@@ -6,6 +6,10 @@ import DetailsHead from './DetailsHead';
 
 function TrainingDetails({ match }) {
     const type = types.find(({ id }) => id == match.params.id)
+    const type1 = [];
+    const listItmes = type.list.map(el => {
+        return (<li key={el.id}>{el.li}</li>)
+    })
     return (
         <main className="page-head" style={{ width: '100%', margin: '0', position: 'static' }}>
             <DetailsHead />
@@ -20,24 +24,16 @@ function TrainingDetails({ match }) {
                     <div className="blog_text">
                         <p style={{ width: '90%', padding: '5px' }}>{type.text}</p>
                     </div>
-                    <h2 style={{ marginLeft: '-15px', fontWeight: '600', padding: '5px' }}>{type.trng_h2}</h2>
-                    <div className="trn_list">
-                        <ul className="list-group" style={{ listStyleType: 'none', marginLeft: '-15px', padding: '5px' }}>
-                            <li>{type.li1}</li>
-                            <li>{type.li2}</li>
-                            <li>{type.li3}</li>
-                            <li>{type.li4}</li>
-                            <li>{type.li5}</li>
-                            <li>{type.li6}</li>
-                            <li>{type.li7}</li>
-                            <li>{type.li8}</li>
-                            <li>{type.li9}</li>
+                    <h2 style={{ fontWeight: '600', padding: '5px' }}>{type.trng_h2}</h2>
+                    <div>
+                        <ul className="list-group">
+                            {listItmes}
                         </ul>
                     </div>
                     <br />
                     <hr />
-                    <div className="foot_text" style={{marginLeft:'-15px',padding:'5px'}}>
-                        <h6 style={{lineHeight:'1.5rem'}}>{type.footerText}</h6>
+                    <div className="foot_text" style={{ padding: '5px' }}>
+                        <h6 style={{ lineHeight: '1.5rem' }}>{type.footerText}</h6>
                     </div>
                 </div>
             </div>

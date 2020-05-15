@@ -21,19 +21,19 @@ class MainContent extends Component {
                 <div className="badges">
                     <img src={badge1} alt=""></img>
                     <h5 >
-                        NUTRITION<span> COACHING</span>
+                        PLAN<span> ISHRANE</span>
                     </h5>
                     <img src={badge2} alt=""></img>
                     <h5>
-                        PERSONAL<span> TRAINING</span>
+                        INDIVIDUALNI<span> TRENINZI</span>
                     </h5>
                     <img src={badge3} alt=""></img>
                     <h5>
-                        FAT<span> LOSS</span>
+                        GUBITAK<span> TEZINE</span>
                     </h5>
                     <img src={badge4} alt=""></img>
                     <h5>
-                        GUARANTEED<span> RESULTS</span>
+                        GARANTOVANI<span> REZULTATI</span>
                     </h5>
                 </div>
             </div>

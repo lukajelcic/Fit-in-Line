@@ -51,7 +51,7 @@ class App extends Component {
               <Route exact path='/programs/:id' component={TrainingDetails} />
               <Route exact path='/about' component={About} />
               <Route exact path='/gallery' component={GalleryPage} />
-              <Route exact path='/dashboard' component={dashboard} />
+              {authenticated ? (<Route exact path='/dashboard' component={dashboard} />) : null}
               <Route exact path='/' component={HomePage} />
               <Route exact path='*' component={HomePage} />
             </Switch>

@@ -45,11 +45,17 @@
 }
 
 .ntr-text ul{
-    list-style-type: none;
+margin-left: 15px;
 }
 
 .ntr-text ul li{
     margin: 7px 0;
+}
+
+.ntr-text ul li:hover{
+    border-left: 7px solid #cf7303;
+    cursor: pointer;
+    transform: skewX(-5deg);
 }
 
 .bmr_wrap{

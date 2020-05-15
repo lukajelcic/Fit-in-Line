@@ -24,7 +24,7 @@ class QuestionsHeader extends React.Component {
                 <div className="questions-heading-text">
                     <div className="inner-text">
                         <h2>Najcesce postavljana pitanja</h2>
-                        <h3>pogledajte kako radi !</h3>
+                        <h3>pogledajte odgovore !</h3>
                     </div>
                 </div>
 

@@ -11,7 +11,7 @@ class BmrCalc extends Component {
             gender: '',
             activity: '',
             bmr: '',
-            calories: '',
+            calories: Number.to,
             message: '',
             isSubmited: false
         }
@@ -86,7 +86,7 @@ class BmrCalc extends Component {
     render() {
         const { isSubmited } = this.state
         return (
-            <div className="bmr_wrap">
+            <div className="bmr_wrap row">
                 <div className="bmr_form">
                     <form onSubmit={this.handleSubmit}>
                         <h3>BMR Kalkulator</h3>

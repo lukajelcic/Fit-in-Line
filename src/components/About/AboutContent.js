@@ -11,13 +11,8 @@ function AboutContent(props) {
                 <p>{props.text3}</p>
                 <p>{props.text4}</p>
                 <p>{props.text6}</p>
-                <p>{props.text7}</p>
+                <p>Ukoliko imate pitanja ili nedoumice, uvek nas možete pozvati i dodatno se informisati na broj br.telefona - <span style={{fontWeight:'bold',color:'#cf7303'}}>066 34 36 06</span></p>
                 <h4>{props.text8}</h4>
-                <section className="about-list">
-                <div className="list">
-                    <Link to="/nutrition/#nutri"><h3 className="about-nutrition">PROGRAM ISHRANE</h3></Link>
-                </div>
-            </section>
             </div>
 
         </div>

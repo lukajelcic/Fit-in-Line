@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core';
 import MyButton from '../../util/MyButton';
+import axios from 'axios';
 
 //MUI Stuff
 import TextField from '@material-ui/core/TextField';
@@ -16,7 +17,7 @@ import EditIcon from '@material-ui/icons/Edit';
 
 //Redux
 import { connect } from 'react-redux';
-import { editBlog, getOnePost } from '../../redux/actions/dataActions';
+import { editBlog, getOnePost,getNews } from '../../redux/actions/dataActions';
 import Axios from 'axios';
 
 const styles = {
@@ -72,6 +73,17 @@ class Edit extends Component {
         })
     }
 
+    handleSubmit = (e)=>{
+        e.preventDefault();
+        const blogDetails = {
+            title:this.state.title,
+            body:this.state.body
+        }
+        axios.put(`/news/${this.props.newsId}`,blogDetails)
+        this.setState({
+            open:false
+        })
+    }
     render() {
         const { classes } = this.props
         return (
@@ -136,7 +148,9 @@ const mapStateToProps = state => ({
 
 const mapActionsToProps = {
     editBlog,
-    getOnePost
+    getOnePost,
+    getNews
+    
 }
 
 export default connect(mapStateToProps, mapActionsToProps)(withStyles(styles)(Edit))

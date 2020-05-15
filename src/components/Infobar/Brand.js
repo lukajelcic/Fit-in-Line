@@ -1,9 +1,12 @@
 import React from 'react';
 import './Infobar.css'
+import logo from '../../images/logo.png'
+import {Link} from 'react-router-dom'
+
 
 const Brand = () =>{
     return (
-        <div className="infobar-logo"><a href="/">Fit In Line</a></div>
+        <Link to="/"><img src={logo} style={{width:'74px',height:'64px'}}/></Link>
     )
 }
 

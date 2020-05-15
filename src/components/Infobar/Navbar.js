@@ -71,9 +71,12 @@ export default connect(mapStateToProps, null)(Navbar);
 const NavBar = styled(animated.nav)`
   position: relative;
   display:flex;
+  align-items:center;
   width: 100%;
   top: 0;
   left: 0;
+  bottom:0;
+  right:0;
   background:rgb(9, 83, 88);
   z-index: 1;
   font-size: 1.2rem;
@@ -93,7 +96,8 @@ const NavLinks = styled(animated.ul)`
   & a {
     color: #dfe6e9;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif !important;
     border-bottom: 1px solid transparent;
     margin: 0 1.5rem;
     transition: all 300ms linear 0s;

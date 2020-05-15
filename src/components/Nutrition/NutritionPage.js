@@ -5,6 +5,9 @@ import NutritionContent from './NutritionContent';
 // import MainContent from '../MainContent/MainContent'
 
 class NutritionPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <main className="page-head" style={{ width: '100%', margin: '0', position: 'static' }}>

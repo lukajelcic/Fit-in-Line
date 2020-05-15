@@ -16,6 +16,7 @@ class OneNews extends Component {
         blog: {}
     }
     componentDidMount() {
+        window.scrollTo(0,0);
         let id = this.props.match.params.newsId;
         this.props.getOnePost(id)
     }
